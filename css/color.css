@@ -1,0 +1,386 @@
+.demo-panel {
+    background: none repeat scroll 0 0 #fff;
+    padding: 15px;
+    position: fixed;
+    top: 15%;
+    width: 175px;
+    z-index: 999;
+    left: -175px;
+    transition: all 0.9s ease 0s;
+    -moz-transition: all 0.9s ease 0s;
+    -webkit-transition: all 0.9s ease 0s;
+    -o-transition: all 0.9s ease 0s;
+}
+.demo-panel-open,
+.demo-panel-close {
+    color: #fff;
+    font-size: 20px;
+    height: 35px;
+    line-height: 33px;
+    position: absolute;
+    right: -35px;
+    text-align: center;
+    top: 0;
+    width: 35px;
+    cursor: pointer;
+	background-color:#000;
+	
+}
+.demo-panel-open i { }
+.demo-panel-close { display: none }
+.colors-top { overflow: hidden }
+.colors-top a {
+    border-radius: 3px;
+    display: block;
+    margin-top: 9px;
+    padding: 5px;
+    border: 1px solid;
+}
+html body .colors-top a:hover {
+    border-color: #333;
+    color: #333;
+    text-decoration: none;
+}
+.colors-top h2 { font-size: 18px }
+.colors-top h2.change-ver { margin-top: 20px }
+.color-bar {
+    float: left;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 30px;
+    cursor: pointer;
+	
+	transform:skew(0deg, 20deg)
+}
+#lite_green-color { background-color: #06a785 }
+#green-color { background-color: #8b941a }
+#sky-color { background-color: #2b85c1 }
+#purple-color { background-color: #8e44ad }
+#dark-color { background-color: #2c3e50 }
+#yellow-color { background-color: #f1c40f }
+#pink-color { background-color: #ff4081 }
+#default-color { background-color: #e03e25 }
+
+
+
+/* green-color*/
+
+.green-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.green-color .mainmenu ul li a:hover,
+.green-color .mainmenu ul li.active a,
+.green-color .social-icon a:hover i,
+.green-color .header-top-left i,
+.green-color .bottom_menu ul li.active a,
+.green-color .copy_right p span,
+.green-color .bottom_icon ul li a:hover i,
+.green-color .bottom_menu ul li:hover a,
+.green-color .us h4,
+.green-color .port_overlay a,
+.green-color .single_feature h3,
+.green-color .single_feature i{
+	color:#8b941a ;
+}
+
+
+.green-color .nav.navbar-nav.navbar-right li a:before,
+.green-color .nav.navbar-nav.navbar-right li a:after,
+.green-color .progress-bar,
+.green-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.green-color .accordion-page-content .panel-title .close-icon,
+.green-color .single_feature_text:hover i,
+.green-color a.purches_button, 
+.green-color .top_badge, 
+.green-color input[type="submit"]{
+	background-color:#8b941a ;
+}
+
+.green-color input[type="submit"]:hover,
+.green-color textarea,
+.green-color input, 
+.green-color .port_overlay i:before,
+.green-color .top_badge p:after{
+	border-color:#8b941a ;
+}
+.green-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.green-color .single_feature_text:hover i,
+.green-color input[type="submit"]{
+	color:#fff;
+}
+/* sky-color*/
+.sky-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.sky-color .mainmenu ul li a:hover,
+.sky-color .mainmenu ul li.active a,
+.sky-color .social-icon a:hover i,
+.sky-color .header-top-left i,
+.sky-color .bottom_menu ul li.active a,
+.sky-color .copy_right p span,
+.sky-color .bottom_icon ul li a:hover i,
+.sky-color .bottom_menu ul li:hover a,
+.sky-color .us h4,
+.sky-color .port_overlay a,
+.sky-color .single_feature h3,
+.sky-color .single_feature i{
+	color:#2b85c1 ;
+}
+
+.sky-color .nav.navbar-nav.navbar-right li a:before,
+.sky-color .nav.navbar-nav.navbar-right li a:after,
+.sky-color .progress-bar,
+.sky-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.sky-color .accordion-page-content .panel-title .close-icon,
+.sky-color .single_feature_text:hover i,
+.sky-color a.purches_button, 
+.sky-color .top_badge, 
+.sky-color input[type="submit"]{
+	background-color:#2b85c1 ;
+}
+
+.sky-color input[type="submit"]:hover,
+.sky-color textarea,
+.sky-color input, 
+.sky-color .port_overlay i:before,
+.sky-color .top_badge p:after{
+	border-color:#2b85c1 ;
+}
+.sky-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.sky-color .single_feature_text:hover i,
+.sky-color input[type="submit"]{
+	color:#fff;
+}
+
+
+/* purple-color*/
+
+.purple-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.purple-color .mainmenu ul li a:hover,
+.purple-color .mainmenu ul li.active a,
+.purple-color .social-icon a:hover i,
+.purple-color .header-top-left i,
+.purple-color .bottom_menu ul li.active a,
+.purple-color .copy_right p span,
+.purple-color .bottom_icon ul li a:hover i,
+.purple-color .bottom_menu ul li:hover a,
+.purple-color .us h4,
+.purple-color .port_overlay a,
+.purple-color .single_feature h3,
+.purple-color .single_feature i{
+	color:#8e44ad ;
+}
+
+
+.purple-color .nav.navbar-nav.navbar-right li a:before,
+.purple-color .nav.navbar-nav.navbar-right li a:after,
+.purple-color .progress-bar,
+.purple-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.purple-color .accordion-page-content .panel-title .close-icon,
+.purple-color .single_feature_text:hover i,
+.purple-color a.purches_button, 
+.purple-color .top_badge, 
+.purple-color input[type="submit"]{
+	background-color:#8e44ad ;
+}
+
+.purple-color input[type="submit"]:hover,
+.purple-color textarea,
+.purple-color input, 
+.purple-color .port_overlay i:before,
+.purple-color .top_badge p:after{
+	border-color:#8e44ad ;
+}
+.purple-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.purple-color .single_feature_text:hover i,
+.purple-color input[type="submit"]{
+	color:#fff;
+}
+/* dark-color*/
+
+.dark-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.dark-color .mainmenu ul li a:hover,
+.dark-color .mainmenu ul li.active a,
+.dark-color .social-icon a:hover i,
+.dark-color .header-top-left i,
+.dark-color .bottom_menu ul li.active a,
+.dark-color .copy_right p span,
+.dark-color .bottom_icon ul li a:hover i,
+.dark-color .bottom_menu ul li:hover a,
+.dark-color .us h4,
+.dark-color .port_overlay a,
+.dark-color .single_feature h3,
+.dark-color .single_feature i{
+	color:#2c3e50 ;
+}
+
+
+.dark-color .nav.navbar-nav.navbar-right li a:before,
+.dark-color .nav.navbar-nav.navbar-right li a:after,
+.dark-color .progress-bar,
+.dark-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.dark-color .accordion-page-content .panel-title .close-icon,
+.dark-color .single_feature_text:hover i,
+.dark-color a.purches_button, 
+.dark-color .top_badge, 
+.dark-color input[type="submit"]{
+	background-color:#2c3e50 ;
+}
+
+.dark-color input[type="submit"]:hover,
+.dark-color textarea,
+.dark-color input, 
+.dark-color .port_overlay i:before,
+.dark-color .top_badge p:after{
+	border-color:#2c3e50 ;
+}
+.dark-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.dark-color .single_feature_text:hover i,
+.dark-color input[type="submit"]{
+	color:#fff;
+}
+/* yellow-color*/
+
+.yellow-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.yellow-color .mainmenu ul li a:hover,
+.yellow-color .mainmenu ul li.active a,
+.yellow-color .social-icon a:hover i,
+.yellow-color .header-top-left i,
+.yellow-color .bottom_menu ul li.active a,
+.yellow-color .copy_right p span,
+.yellow-color .bottom_icon ul li a:hover i,
+.yellow-color .bottom_menu ul li:hover a,
+.yellow-color .us h4,
+.yellow-color .port_overlay a,
+.yellow-color .single_feature h3,
+.yellow-color .single_feature i{
+	color:#f1c40f ;
+}
+
+
+.yellow-color .nav.navbar-nav.navbar-right li a:before,
+.yellow-color .nav.navbar-nav.navbar-right li a:after,
+.yellow-color .progress-bar,
+.yellow-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.yellow-color .accordion-page-content .panel-title .close-icon,
+.yellow-color .single_feature_text:hover i,
+.yellow-color a.purches_button, 
+.yellow-color .top_badge, 
+.yellow-color input[type="submit"]{
+	background-color:#f1c40f ;
+}
+
+.yellow-color input[type="submit"]:hover,
+.yellow-color textarea,
+.yellow-color input, 
+.yellow-color .port_overlay i:before,
+.yellow-color .top_badge p:after{
+	border-color:#f1c40f ;
+}
+.yellow-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.yellow-color .single_feature_text:hover i,
+.yellow-color input[type="submit"]{
+	color:#fff;
+}
+/* pink-color*/
+.pink-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.pink-color .mainmenu ul li a:hover,
+.pink-color .mainmenu ul li.active a,
+.pink-color .social-icon a:hover i,
+.pink-color .header-top-left i,
+.pink-color .bottom_menu ul li.active a,
+.pink-color .copy_right p span,
+.pink-color .bottom_icon ul li a:hover i,
+.pink-color .bottom_menu ul li:hover a,
+.pink-color .us h4,
+.pink-color .port_overlay a,
+.pink-color .single_feature h3,
+.pink-color .single_feature i{
+	color:#ff4081  ;
+}
+
+
+.pink-color .nav.navbar-nav.navbar-right li a:before,
+.pink-color .nav.navbar-nav.navbar-right li a:after,
+.pink-color .progress-bar,
+.pink-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.pink-color .accordion-page-content .panel-title .close-icon,
+.pink-color .single_feature_text:hover i,
+.pink-color a.purches_button, 
+.pink-color .top_badge, 
+.pink-color input[type="submit"]{
+	background-color:#ff4081  ;
+}
+
+.pink-color input[type="submit"]:hover,
+.pink-color textarea,
+.pink-color input, 
+.pink-color .port_overlay i:before,
+.pink-color .top_badge p:after{
+	border-color:#ff4081  ;
+}
+.pink-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.pink-color .single_feature_text:hover i,
+.pink-color input[type="submit"]{
+	color:#fff;
+}
+
+/* lite_green-color*/
+
+.lite_green-color .mainmenu ul.nav.navbar-nav li ul :hover a,
+.lite_green-color .mainmenu ul li a:hover,
+.lite_green-color .mainmenu ul li.active a,
+.lite_green-color .social-icon a:hover i,
+.lite_green-color .header-top-left i,
+.lite_green-color .bottom_menu ul li.active a,
+.lite_green-color .copy_right p span,
+.lite_green-color .bottom_icon ul li a:hover i,
+.lite_green-color .bottom_menu ul li:hover a,
+.lite_green-color .us h4,
+.lite_green-color .port_overlay a,
+.lite_green-color .single_feature h3,
+.lite_green-color .single_feature i{
+	color:#06a785;
+}
+
+
+.lite_green-color .nav.navbar-nav.navbar-right li a:before,
+.lite_green-color .nav.navbar-nav.navbar-right li a:after,
+.lite_green-color .progress-bar,
+.lite_green-color .accordion-page-content .panel-title a.collapsed span.open-icon,
+.lite_green-color .accordion-page-content .panel-title .close-icon,
+.lite_green-color .single_feature_text:hover i,
+.lite_green-color a.purches_button, 
+.lite_green-color .top_badge, 
+.lite_green-color input[type="submit"]{
+	background-color:#06a785;
+}
+
+.lite_green-color input[type="submit"]:hover,
+.lite_green-color textarea,
+.lite_green-color input, 
+.lite_green-color .port_overlay i:before,
+.lite_green-color .top_badge p:after{
+	border-color:#06a785;
+}
+.lite_green-color .top_badge p:after{
+	border-right-color:transparent;
+}
+.lite_green-color .single_feature_text:hover i,
+.lite_green-color input[type="submit"]{
+	color:#fff;
+}
+
+
+
+

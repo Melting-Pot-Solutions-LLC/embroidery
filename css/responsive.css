@@ -1,0 +1,267 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+
+	.us h4 {
+		padding-left: 20px;
+		padding-top: 5px;
+	}
+	.bottom_padding {
+		padding-bottom: 30px;
+	}
+	.section_padding {
+		padding-top: 30px;
+	}  
+	#vedio_bg video {
+		width:auto;
+	}
+	.fullscreen-bg {
+		height:100%;
+	}
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.bottom_padding {
+		padding-bottom: 55px;
+	}
+	.section_padding {
+		padding-top: 40px;
+	}
+		
+	.navbar-brand {
+		height: 100px;
+		width: 160px;
+	}
+	.navbar-brand img {
+		max-height: 100%;
+	}
+	.nav.navbar-nav li a {
+		font-size: 14px;
+		line-height: 100px;
+		padding: 0 10px;
+	}
+    .is-sticky .navbar-brand img {
+        width: 100%;
+    }
+	.portfolio_area {
+		padding:0;
+	}	
+	.portfolio_area:before, .portfolio_area:after{
+		display:none;
+	}
+	.port_sp {
+		margin-top: 0;
+	}		
+	.single_port, .single_port_two, .single_port_two a, .port_overlay a{
+		transform: skew(0deg);
+		margin-bottom:20px;
+	}
+	.single_port img {
+		width: 100%;
+		height:auto;
+	}
+
+	.bottom_menu ul {
+		float: none;
+		text-align:center;
+	}
+	.copy_right p {
+		line-height: 60px;
+	} 
+	.bottom_menu ul li a{
+		line-height: 40px;
+	}
+	.us {
+		float: left;
+		padding-bottom: 35px;
+		text-align: center;
+		width: 50%;
+	}
+	.bottom_icon {
+		right: 0;
+	}
+    .bottom_icon ul {
+		float: right;
+		margin-top: -30px;
+		padding-right: 110px;
+	}
+
+	.contact_form {
+		padding-top: 40px;
+	}
+	.copy_right{
+		text-align:center;
+	}
+	#vedio_bg video {
+		width:auto;
+	}
+	.fullscreen-bg {
+		height:100%;
+	}
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+
+	.section_padding {
+		padding-top: 50px;
+	}
+	.section_title p {
+		padding: 0;
+	}
+	.section_title h2 {
+		font-size: 26px;
+	}
+	.social-icon {
+		text-align: center;
+	}
+
+	.header-top-left p {
+		line-height: 30px;
+		margin-right: 5px;
+		font-size:13px;
+	}
+	.header_area .navbar-header {
+		text-align:right;
+	}
+	.header_bottom {
+		background-color:#f1f1f1;
+	}
+	.header_bottom .navbar-toggle {
+		border: 1px solid #000;
+		float: none;
+		margin-top:35px;
+	}
+	.nav.navbar-nav.navbar-right li a:before {
+		display: none;
+	}
+	.nav li{
+		background-color:#f1f1f1;
+	}
+	.nav.navbar-nav li a {
+		line-height: 40px;
+	}
+	.is-sticky  ul.nav.navbar-nav li a {
+		line-height: 40px;
+	}
+	.nav.navbar-nav.navbar-right {
+		margin-top: 0;
+	}
+	.header_bottom .navbar-toggle .icon-bar {
+		background-color: #000;
+	}
+	.mainmenu ul.nav.navbar-nav li ul {
+		display: none;
+		background-color:none;
+	}
+	.banner_text {
+		margin-top: -90px;
+	}
+	.banner_text h1 {
+		font-size: 40px;
+	}	
+	.banner_text h2 {
+		font-size: 20px;
+	} 
+	.banner_text p {
+		line-height: 20px;
+		padding: 0;
+	}
+	.feature_area {
+		height: auto;
+	}
+	.feature_content {
+		margin-top: -50px;
+		position: static;
+	}
+	.single_feature {
+		margin-top: 25px;
+	}
+	.about_us_area .border_line_top{
+		display:none;
+	}
+	.accordion-page-content {
+		height: auto;
+		padding-top: 30px;
+	}
+	.team_area {
+		padding-bottom: 10px;
+	}	
+	.portfolio_area:before, .portfolio_area:after{
+		display:none;
+	}
+	.portfolio_area {
+		padding:0;
+	}	
+	.port_sp {
+		margin-top: 0;
+	}
+	.single_port, .single_port_two, .single_port_two a, .port_overlay a, .single_feature, .single_feature_text, .feature_content_right .single_feature, .feature_content_right .single_feature_text{
+		transform: skew(0deg);
+		margin-bottom:20px;
+	}
+	.single_port img {
+		height: 100%;
+		width: 100%;
+	}
+	.contact_details {
+		text-align: center;
+	}
+	.bottom_icon {
+		padding-left: 65px;
+	}
+	.contact_form {
+		padding-top: 45px;
+	}
+	.common_inp {
+		width: 95%;
+	}
+	.bottom_menu ul {
+		padding: 0;
+		text-align: left;
+	}	
+	.bottom_menu ul li a {
+		line-height: 50px;
+		font-size: 12px;
+		padding-left: 3px;
+	}	
+	.copy_right p {
+		line-height: 50px;
+	}
+	.copy_right{
+		text-align:center;
+	}
+	.bottom_menu ul {
+		text-align: center;
+	}
+
+	.bottom_padding {
+		padding-bottom: 0;
+	}
+	#vedio_bg video {
+		width:auto;
+	}
+	.fullscreen-bg{
+		overflow:hidden;
+		height:100%;
+	}	
+}
+
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+	.container {
+		width: 450px;
+		margin: 0 auto;
+	}
+	
+	.header-top-left{
+		padding-left:20%;
+	}
+
+	.bottom_icon {
+		padding-left: 135px;
+	}
+
+}
