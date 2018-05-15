@@ -589,6 +589,7 @@ video{
 } 
 .accordion-page-content .panel-default .panel-heading + .panel-collapse .panel-body {
     color: #333;
+    min-height: 111px;
 }
 .accordion-page-content{
     height: 555px;
