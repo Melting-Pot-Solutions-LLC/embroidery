@@ -92,7 +92,8 @@ html body .colors-top a:hover {
 .green-color .single_feature_text:hover i,
 .green-color a.purches_button, 
 .green-color .top_badge, 
-.green-color input[type="submit"]{
+.green-color input[type="submit"],
+.green-color .feature_content img:hover {
 	background-color:#8b941a ;
 }
 
@@ -100,7 +101,8 @@ html body .colors-top a:hover {
 .green-color textarea,
 .green-color input, 
 .green-color .port_overlay i:before,
-.green-color .top_badge p:after{
+.green-color .top_badge p:after,
+.green-color .feature_content img {
 	border-color:#8b941a ;
 }
 .green-color .top_badge p:after{
@@ -135,7 +137,8 @@ html body .colors-top a:hover {
 .sky-color .single_feature_text:hover i,
 .sky-color a.purches_button, 
 .sky-color .top_badge, 
-.sky-color input[type="submit"]{
+.sky-color input[type="submit"],
+.sky-color .feature_content img:hover {
 	background-color:#2b85c1 ;
 }
 
@@ -143,7 +146,8 @@ html body .colors-top a:hover {
 .sky-color textarea,
 .sky-color input, 
 .sky-color .port_overlay i:before,
-.sky-color .top_badge p:after{
+.sky-color .top_badge p:after,
+.sky-color .feature_content img {
 	border-color:#2b85c1 ;
 }
 .sky-color .top_badge p:after{
@@ -182,7 +186,8 @@ html body .colors-top a:hover {
 .purple-color .single_feature_text:hover i,
 .purple-color a.purches_button, 
 .purple-color .top_badge, 
-.purple-color input[type="submit"]{
+.purple-color input[type="submit"],
+.purple-color .feature_content img:hover {
 	background-color:#8e44ad ;
 }
 
@@ -190,7 +195,8 @@ html body .colors-top a:hover {
 .purple-color textarea,
 .purple-color input, 
 .purple-color .port_overlay i:before,
-.purple-color .top_badge p:after{
+.purple-color .top_badge p:after,
+.purple-color .feature_content img {
 	border-color:#8e44ad ;
 }
 .purple-color .top_badge p:after{
@@ -227,7 +233,8 @@ html body .colors-top a:hover {
 .dark-color .single_feature_text:hover i,
 .dark-color a.purches_button, 
 .dark-color .top_badge, 
-.dark-color input[type="submit"]{
+.dark-color input[type="submit"],
+.dark-color .feature_content img:hover {
 	background-color:#2c3e50 ;
 }
 
@@ -235,7 +242,8 @@ html body .colors-top a:hover {
 .dark-color textarea,
 .dark-color input, 
 .dark-color .port_overlay i:before,
-.dark-color .top_badge p:after{
+.dark-color .top_badge p:after,
+.dark-color .feature_content img {
 	border-color:#2c3e50 ;
 }
 .dark-color .top_badge p:after{
@@ -272,7 +280,8 @@ html body .colors-top a:hover {
 .yellow-color .single_feature_text:hover i,
 .yellow-color a.purches_button, 
 .yellow-color .top_badge, 
-.yellow-color input[type="submit"]{
+.yellow-color input[type="submit"],
+.yellow-color .feature_content img:hover {
 	background-color:#f1c40f ;
 }
 
@@ -280,7 +289,8 @@ html body .colors-top a:hover {
 .yellow-color textarea,
 .yellow-color input, 
 .yellow-color .port_overlay i:before,
-.yellow-color .top_badge p:after{
+.yellow-color .top_badge p:after,
+.yellow-color .feature_content img {
 	border-color:#f1c40f ;
 }
 .yellow-color .top_badge p:after{
@@ -316,7 +326,8 @@ html body .colors-top a:hover {
 .pink-color .single_feature_text:hover i,
 .pink-color a.purches_button, 
 .pink-color .top_badge, 
-.pink-color input[type="submit"]{
+.pink-color input[type="submit"],
+.pink-color .feature_content img:hover {
 	background-color:#ff4081  ;
 }
 
@@ -324,7 +335,8 @@ html body .colors-top a:hover {
 .pink-color textarea,
 .pink-color input, 
 .pink-color .port_overlay i:before,
-.pink-color .top_badge p:after{
+.pink-color .top_badge p:after,
+.pink-color .feature_content img {
 	border-color:#ff4081  ;
 }
 .pink-color .top_badge p:after{
@@ -362,7 +374,8 @@ html body .colors-top a:hover {
 .lite_green-color .single_feature_text:hover i,
 .lite_green-color a.purches_button, 
 .lite_green-color .top_badge, 
-.lite_green-color input[type="submit"]{
+.lite_green-color input[type="submit"],
+.lite_green-color .feature_content img:hover {
 	background-color:#06a785;
 }
 
@@ -370,7 +383,8 @@ html body .colors-top a:hover {
 .lite_green-color textarea,
 .lite_green-color input, 
 .lite_green-color .port_overlay i:before,
-.lite_green-color .top_badge p:after{
+.lite_green-color .top_badge p:after,
+.lite_green-color .feature_content img {
 	border-color:#06a785;
 }
 .lite_green-color .top_badge p:after{

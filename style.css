@@ -31,7 +31,6 @@
     float: right;
     margin-left: 15px;
 }
-
 a:focus { outline: 0 solid }
 img {
     max-width: 100%;
@@ -135,6 +134,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .header-top-left i { 
 	margin-right: 10px;
 	color:#e03e25;
+}
+.header-top-left a {
+    color: #fff;
+}
+.header-top-left a:hover {
+    color: #fff;
 }
 .social-icon a {
     color: #fff;
@@ -407,6 +412,7 @@ video{
     margin-top: -30px;
     position: absolute;
     top: 0;
+    width: 100%;
 }
 .border_line_top{
     height: 250px;
@@ -446,7 +452,9 @@ video{
 	-ms-transform: skew(0deg, 15deg); /* IE 9 */
     -webkit-transform: skew(0deg, 15deg); /* Safari */
     transform: skew(0deg, 15deg);/* Standard syntax */
-	display:table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .single_feature_text{
 	transform: skew(0deg, -15deg);
@@ -469,6 +477,15 @@ video{
 	-ms-transform: skew(0deg, 15deg); /* IE 9 */
     -webkit-transform: skew(0deg, 15deg); /* Safari */
     transform: skew(0deg, 15deg);/* Standard syntax */
+}
+.feature_content img {
+    border-radius: 50%;
+    padding: 20px;
+    background: #f2f2f1;
+    border: 1px solid #e03f25;
+}
+.feature_content img:hover {
+    background: #e03f25;
 }
 .single_feature i {
     color: #e03e25;
@@ -575,7 +592,7 @@ video{
 }
 .accordion-page-content{
     height: 555px;
-    padding-top: 90px;
+    padding-top: 50px;
 }
 .accordion-page-content .page-static{
     margin-top:0px;
@@ -612,6 +629,7 @@ video{
 
 .team_area{
 	padding-bottom:150px;
+    padding-top: 120px;
 }
 .team_total{
 	padding:30px 0;
