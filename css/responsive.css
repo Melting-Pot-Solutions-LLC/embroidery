@@ -19,6 +19,12 @@
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+    .fullscreen-bg__video{
+        width: auto;
+    }
+}
+
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	

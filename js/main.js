@@ -21,7 +21,20 @@
 		
 		// wow js
 		new WOW().init();
-		
+        
+        //pause-play video
+        var video = $("#video-bg");
+        (video.get(0).paused) ? $(".play-pause").addClass("fa-pause") : $(".play-pause").addClass("fa-play");
+        $(".play-pause").click(function(){
+             if (video.get(0).paused) {
+                video.get(0).play();
+                 $(".play-pause").removeClass("fa-play").addClass("fa-pause");
+              } else {
+                video.get(0).pause();
+                $(".play-pause").removeClass("fa-pause").addClass("fa-play");
+              }
+        });
+        
 		//this code is for venobox
 		$('.lightbox').venobox({
 			titleattr: 'data-title',

@@ -280,6 +280,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	background-color:#000;
 	opacity:0.8;
  }
+.play-pause {
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    left: 50vw;
+    opacity: .4;
+}
 .banner_table{
 	display:table;
 	height:100%;
