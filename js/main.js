@@ -24,7 +24,7 @@
         
         //pause-play video
         var video = $("#video-bg");
-        (video.get(0).paused) ? $(".play-pause").addClass("fa-pause") : $(".play-pause").addClass("fa-play");
+        if ($(window).width() < 960) $(".play-pause").removeClass("fa-pause").addClass("fa-play");
         $(".play-pause").click(function(){
              if (video.get(0).paused) {
                 video.get(0).play();
