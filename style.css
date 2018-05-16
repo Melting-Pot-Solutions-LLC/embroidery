@@ -707,6 +707,8 @@ video{
 	display:inline-block;
 	height:100%;
 	width:100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 .single_port_two{
 	-ms-transform: skew(0deg, 15deg); /* IE 9 */
@@ -715,6 +717,9 @@ video{
 }
 .port_sp{
 	margin-top:-30%;
+}
+.port_sp_3{
+	margin-top:30%;
 }
 .port_overlay{
 	position:absolute;
