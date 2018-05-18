@@ -600,7 +600,7 @@ video{
     min-height: 111px;
 }
 .accordion-page-content{
-    height: 555px;
+/*    height: 555px;*/
     padding-top: 50px;
 }
 .accordion-page-content .page-static{
@@ -638,7 +638,7 @@ video{
 
 .team_area{
 	padding-bottom:150px;
-    padding-top: 120px;
+    padding-top: 90px;
 }
 .team_total{
 	padding:30px 0;
@@ -894,6 +894,15 @@ input[type="submit"]:hover{
 	background-color:#fff;
 	border:1px solid #e03e25;
 	color:#e03e25;
+}
+#pcf {
+    max-width: 800px;
+    margin: 0 auto;
+}
+#pcf input[type="submit"] {
+    max-width: 200px;
+    display: block;
+    margin: 20px auto 50px;
 }
 
 
