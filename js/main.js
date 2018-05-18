@@ -163,6 +163,8 @@
         });
     });
 
-
+    $(function(){
+       $("#printavo-contact-form").printavoInquiryForm("5097ddf700200282fa80bd0483c677bb");
+     });
 
 }(jQuery));	
