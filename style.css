@@ -930,6 +930,9 @@ input[type="submit"]:hover{
 .bottom_menu ul li:hover a{
 	color:#e03e25;
 }
+.homebase {
+    font-size: 10px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*       Preloader
