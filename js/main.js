@@ -9,18 +9,6 @@
         $("ul.nav.navbar-nav li a").on('click', function(){
             $(".navbar-collapse").removeClass("in");
         });		
-		//this code is for smooth menu
-//		$('.nav').onePageNav({
-//			changeHash: true,
-//			scrollSpeed: 750,
-//			scrollThreshold: 0.5,
-//			filter: '',
-//			easing: 'swing'
-//		});
-//        
-//        $("li a[href='#about-us']").click(function(){
-//            $("a[href='#about-us']").parent().addClass("current");
-//        });
         
         $(document).on('click', 'a[href^="#"]', function(e) {
             // target element id

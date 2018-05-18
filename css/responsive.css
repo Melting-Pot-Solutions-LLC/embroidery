@@ -158,8 +158,11 @@
 		background-color: #000;
 	}
 	.mainmenu ul.nav.navbar-nav li ul {
-		display: none;
+		display: block;
 		background-color:none;
+        position: initial;
+        opacity: 1;
+        visibility: visible;
 	}
 	.banner_text {
 		margin-top: -90px;
