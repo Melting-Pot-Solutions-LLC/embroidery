@@ -10,30 +10,54 @@
             $(".navbar-collapse").removeClass("in");
         });		
 		//this code is for smooth menu
-		$('.nav').onePageNav({
-			currentClass: 'active',
-			changeHash: false,
-			scrollSpeed: 750,
-			scrollThreshold: 0.5,
-			filter: '',
-			easing: 'swing',
-		});
+//		$('.nav').onePageNav({
+//			changeHash: true,
+//			scrollSpeed: 750,
+//			scrollThreshold: 0.5,
+//			filter: '',
+//			easing: 'swing'
+//		});
+//        
+//        $("li a[href='#about-us']").click(function(){
+//            $("a[href='#about-us']").parent().addClass("current");
+//        });
+        
+        $(document).on('click', 'a[href^="#"]', function(e) {
+            // target element id
+            var id = $(this).attr('href');
+
+            // target element
+            var $id = $(id);
+            if ($id.length === 0) {
+                return;
+            }
+
+            // prevent standard hash navigation (avoid blinking in IE)
+            e.preventDefault();
+
+            // top position relative to the document
+            var pos = $id.offset().top-100;
+
+            // animated top scrolling
+            $('body, html').animate({scrollTop: pos});
+        });
+
 		
 		// wow js
 		new WOW().init();
         
         //pause-play video
-        var video = $("#video-bg");
-        if ($(window).width() < 960) $(".play-pause").removeClass("fa-pause").addClass("fa-play");
-        $(".play-pause").click(function(){
-             if (video.get(0).paused) {
-                video.get(0).play();
-                 $(".play-pause").removeClass("fa-play").addClass("fa-pause");
-              } else {
-                video.get(0).pause();
-                $(".play-pause").removeClass("fa-pause").addClass("fa-play");
-              }
-        });
+//        var video = $("#video-bg");
+//        if ($(window).width() < 960) $(".play-pause").removeClass("fa-pause").addClass("fa-play");
+//        $(".play-pause").click(function(){
+//             if (video.get(0).paused) {
+//                video.get(0).play();
+//                 $(".play-pause").removeClass("fa-play").addClass("fa-pause");
+//              } else {
+//                video.get(0).pause();
+//                $(".play-pause").removeClass("fa-pause").addClass("fa-play");
+//              }
+//        });
         
 		//this code is for venobox
 		$('.lightbox').venobox({
@@ -89,7 +113,7 @@
         $("#default-color").click(function(){
             $("body").removeClass("green-color sky-color purple-color dark-color yellow-color pink-color lite_green-color");
         });
-
+ 
 
     });
 
@@ -101,6 +125,44 @@
         $('body').delay(350);
 		
     });
+    
+    
+    //this code is for scroll menu
+    $.fn.isInViewport = function() {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom;
+    };
+    $(window).on('resize scroll', function() {
+        $("#home").each(function() {
+            if ($(this).isInViewport()) {
+                $("a[href='#home']").parent().addClass("current");
+            }
+        });
+        
+        $("#services-section").each(function() {
+            if ($(this).isInViewport()) {
+                $(".mainmenu ul li").removeClass("current");
+                $("a[href='#services-section']").parent().addClass("current");
+            } else {
+              $("a[href='#services-section']").parent().removeClass("current");
+            }
+        });
+        
+        $("#about-us").each(function() {
+            if ($(this).isInViewport()) {
+                $(".mainmenu ul li").removeClass("current");
+                $("a[href='#about-us']").parent().addClass("current");
+            } else {
+              $("a[href='#about-us']").parent().removeClass("current");
+            }
+        });
+    });
+
 
 
 }(jQuery));	

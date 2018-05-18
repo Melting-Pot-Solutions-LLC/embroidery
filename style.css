@@ -187,11 +187,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .nav.navbar-nav.navbar-right  > li > a:after {
     top:calc(100% - 2px)
 }
-.mainmenu ul.nav.navbar-nav.navbar-right li.active a:before, .mainmenu ul.nav.navbar-nav.navbar-right li a:hover:before{
+.mainmenu ul.nav.navbar-nav.navbar-right li.current a:before, .mainmenu ul.nav.navbar-nav.navbar-right li a:hover:before{
 	opacity:1;
 	width:100%;
 }
-.mainmenu ul.nav.navbar-nav.navbar-right li.active a:after, .mainmenu ul.nav.navbar-nav.navbar-right li a:hover:after{
+.mainmenu ul.nav.navbar-nav.navbar-right li.current a:after, .mainmenu ul.nav.navbar-nav.navbar-right li a:hover:after{
 	opacity:1;
 	width:100%;
 }
@@ -223,7 +223,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .mainmenu ul.nav.navbar-nav li ul :hover a{
 	color:#e03e25;
 }
-.mainmenu ul li a:hover,.mainmenu ul li.active a{
+.mainmenu ul li a:hover,.mainmenu ul li.current a{
 	color:#e03e25;
 }
 .mainmenu ul.nav.navbar-nav li:hover ul {
@@ -768,6 +768,9 @@ video{
 	-ms-transform: skew(0deg, -15deg); /* IE 9 */
     -webkit-transform: skew(0deg, -15deg); /* Safari */
     transform: skew(0deg, -15deg);/* Standard syntax */
+}
+.section-block .portfolio_area {
+    margin-bottom: 150px;
 }
 
 /*-----------------------------------------------------------------------------------*/

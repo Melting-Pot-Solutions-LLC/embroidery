@@ -110,16 +110,15 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="mainMenu">
 								<ul class="nav navbar-nav navbar-right">
-									<li class="active"><a href="#home">Home</a>
-									</li>
+									<li class="current"><a href="#home">Home</a></li>
 									<li><a href="#about-us">About us </a></li>
-									<li><a href="#">Promo </a></li>
-									<li><a href="#services">Services <i class="fa fa-angle-down"></i> </a>
+									<li><a href="#team">Promo </a></li>
+									<li><a href="#services-section">Services <i class="fa fa-angle-down"></i> </a>
 									    <ul>
-											<li><a href="#">Screens</a></li>
-											<li><a href="#">Embroidery</a></li>
-											<li><a href="#">Signs</a></li>
-											<li><a href="#">Banners</a></li>
+											<li><a href="services-screens.html">Screens</a></li>
+											<li><a href="embroidery.html">Embroidery</a></li>
+											<li><a href="signs.html">Signs</a></li>
+											<li><a href="banners.html">Banners</a></li>
 										</ul>
 									</li>
 								</ul>
@@ -138,12 +137,12 @@
 			</video>
 		</div>	
 		<div class="banner_overlay"></div>
-		<i class="fa fa-3x fa-pause play-pause"></i>
+<!--		<i class="fa fa-3x fa-pause play-pause"></i>-->
 			
 		</section>
 		<!--==============================banner_area end ===============================-->
 		<!--==============================feature_area start ===============================-->
-        <section class="feature_area">
+        <section class="feature_area"  id="services-section">
 			<div class="border_line_top"></div>
 			<div class="container">
 				<div class="row feature_start">
@@ -152,7 +151,7 @@
 							<div class="col-xs-12 col-sm-3 col-md-3">
 								<div class="single_feature text-center">
 									<div class="single_feature_text">
-										<img src="img/screen.png" alt="img">
+										<a href="services-screens.html"><img src="img/screen.png" alt="img"></a>
 										<h3>Screens</h3>
 										<p></p>
 									</div><!--single_feature_text end -->
@@ -161,7 +160,7 @@
 							<div class="col-xs-12 col-sm-3 col-md-3">
 								<div class="single_feature text-center  feature_two">
 									<div class="single_feature_text">
-										<img src="img/embroidery.png" alt="img">
+										<a href="embroidery.html"><img src="img/embroidery.png" alt="img"></a>
 										<h3>Embroidery</h3>
 										<p></p>
 									</div><!--single_feature_text end -->
@@ -172,7 +171,7 @@
 							<div class="col-xs-12 col-sm-3 col-md-3">
 								<div class="single_feature text-center feature_two ">
 									<div class="single_feature_text">
-										<img src="img/signs.png" alt="img">
+										<a href="signs.html"><img src="img/signs.png" alt="img"></a>
 										<h3>Signs </h3>
 										<p></p>
 									</div><!--single_feature_text end -->
@@ -181,7 +180,7 @@
 							<div class="col-xs-12 col-sm-3 col-md-3">
 								<div class="single_feature text-center">
 									<div class="single_feature_text">
-										<img src="img/banners.png" alt="img">
+										<a href="banners.html"><img src="img/banners.png" alt="img"></a>
 										<h3>Banners</h3>
 										<p></p>
 									</div><!--single_feature_text end -->
@@ -194,13 +193,13 @@
 		</section>
 		<!--==============================feature_area end ===============================-->
 		<!--==============================about_us_area start ===============================-->
-        <section class="about_us_area section_padding bottom_padding " id="about-us" >
+        <section class="about_us_area section_padding bottom_padding " id="about-us">
 		<div class="border_line_top"></div>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="section_title">
-							<h2>All About You Need to Know About Us</h2>
+							<h2>All You Need to Know About Us</h2>
 							<p>With 30+ of years of experience CES is the best option for your custom apparel and printing. If you are in the need for 12 pieces or 12k+ CES takes customer service, quality, and competitiveness very seriously.</p>
                             <p>CES has developed a vast network to source the best options for promotional products. Amongst a sea of options, we have narrowed down the items and vendors that are tried and true and offer quality goods that can actually make money while advertising.</p>
                             <p>Endless options to choose from but we make the process easy by suggesting products that are high quality, cost effective, and look and function great. Custom Pens, buttons, stickers, koozies, patches, labels, hang tags, drink ware, is just the beginning of what is possible.</p>
@@ -312,7 +311,7 @@
 		</section>
 		<!--==============================about_us_area end ===============================-->
 		<!--==============================team_area start ===============================-->
-        <section class="team_area" id="team" >
+        <section class="team_area" id="team">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -759,7 +758,7 @@
 		</section>
 		<!--==============================team_area end ===============================-->
 		<!--==============================footer_area start ===============================-->
-        <footer class="footer_area" id="footer">
+        <footer class="footer_area">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-6 copy_right">
@@ -793,8 +792,6 @@
         <script src="js/bootstrap.min.js"></script>
 		<!-- sticky-menu-->
 		<script src="js/jquery.sticky.js"></script>
-		<!-- nav -->
-		<script src="js/jquery.nav.js"></script>
 		<!-- wow -->
         <script src="js/wow.min.js"></script>
 		<!-- venubox -->
