@@ -48,7 +48,7 @@
 //        });
         var video = $("#video-bg");
         if ($(window).width() < 960) {
-            video.click(function(){ (video.get(0).paused) ?  video.get(0).play() : video.get(0).pause() });
+            $(".banner_overlay").click(function(){ (video.get(0).paused) ?  video.get(0).play() : video.get(0).pause() });
         };
         
 		//this code is for venobox
