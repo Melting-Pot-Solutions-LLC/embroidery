@@ -133,7 +133,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .header-top-left i { 
 	margin-right: 10px;
-	color:#e03e25;
+	color:#6a9d3f;
 }
 .header-top-left a {
     color: #fff;
@@ -147,7 +147,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     padding-left: 15px;
 }
 .social-icon a:hover i {
-    color:  #e03e25;
+    color:  #6a9d3f;
 }
 .header_bottom{
 	background-color:#fff;
@@ -170,7 +170,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     position: relative;
 }
 .nav.navbar-nav.navbar-right > li > a:before, .nav.navbar-nav.navbar-right  > li > a:after  {
-    background-color: #e03e25;
+    background-color: #6a9d3f;
     content: "";
     height: 2px;
     left: 0;
@@ -221,10 +221,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	color:#333333;
 }
 .mainmenu ul.nav.navbar-nav li ul :hover a{
-	color:#e03e25;
+	color:#6a9d3f;
 }
-.mainmenu ul li a:hover,.mainmenu ul li.current a{
-	color:#e03e25;
+.mainmenu ul li a:hover,.mainmenu ul li.current a, 
+.mainmenu ul.nav.navbar-nav li ul a:hover{
+	color:#065599;
 }
 .mainmenu ul.nav.navbar-nav li:hover ul {
     visibility: visible;
@@ -323,7 +324,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 a.purches_button {
-    background-color: #e03e25;
+    background-color: #6a9d3f;
     color: rgb(255, 255, 255);
     cursor: pointer;
     font-family: "Roboto Slab",serif;
@@ -471,7 +472,7 @@ video{
 }
 .single_feature_text:hover i{
 	color:#f1f1f1;
-	background-color:#e03e25;
+	background-color:#6a9d3f;
 }
 .feature_two {
     margin-top:30%;
@@ -490,13 +491,13 @@ video{
     border-radius: 50%;
     padding: 20px;
     background: #f2f2f1;
-    border: 1px solid #e03f25;
+    border: 1px solid #6a9d3f;
 }
 .feature_content img:hover {
-    background: #e03f25;
+    background: #6a9d3f;
 }
 .single_feature i {
-    color: #e03e25;
+    color: #6a9d3f;
     font-size: 48px;
 	line-height:100px;
 	background-color:#f1f1f1;
@@ -511,7 +512,7 @@ video{
 	transition: all 0.5s ease;
 }
 .single_feature h3{
-    color: #e03e25;
+    color: #6a9d3f;
     font-size: 18px;
     font-family: 'Roboto Slab', serif;
 	font-weight:400;
@@ -573,7 +574,7 @@ video{
     display:none;
 }
 .accordion-page-content .panel-title .close-icon {
-    background-color: #e03e25;
+    background-color: #6a9d3f;
     color: #fff;
     display: block;
     float: right;
@@ -586,7 +587,7 @@ video{
     display:none;
 }
 .accordion-page-content .panel-title a.collapsed span.open-icon {
-    background-color:#e03e25;
+    background-color:#6a9d3f;
     color: #fff;
     display: block;
     float: right;
@@ -614,7 +615,7 @@ video{
     padding-left: 45px;
 }
 .progress-bar {
-    background-color: #e03e25;
+    background-color: #6a9d3f;
     color: #fff;
     float: left;
     font-size: 12px;
@@ -707,8 +708,12 @@ video{
 	display:inline-block;
 	height:100%;
 	width:100%;
-    padding: 10px;
     box-sizing: border-box;
+    padding: 30px;
+    background: #fff;
+}
+.portfolio_area .single_port {
+    margin-bottom: 30px;
 }
 .single_port_two{
 	-ms-transform: skew(0deg, 15deg); /* IE 9 */
@@ -746,7 +751,7 @@ video{
 	vertical-align: middle;
 }
 .port_overlay a {
-    color: #e03e25;
+    color: #6a9d3f;
     font-size: 30px;
     height: 0;
     position: relative;
@@ -755,7 +760,7 @@ video{
     transform: skew(0deg, 15deg);/* Standard syntax */
 }
 .port_overlay i:before {
-    border: 1px solid #e03e25;
+    border: 1px solid #6a9d3f;
     border-radius: 50%;
     padding: 30px;
   
@@ -793,7 +798,7 @@ video{
 }
 .us h4{
 	font-size:18px;
-	color:#e03e25;
+	color:#6a9d3f;
 	padding-left:30px;
 	padding-top:20px;
 }
@@ -828,7 +833,7 @@ video{
 	transition: all 0.5s ease;
 }
 .bottom_icon ul li a:hover i{
-    color: #e03e25;
+    color: #6a9d3f;
 }
 .contact_form{
 	padding-top:30px;
@@ -836,8 +841,11 @@ video{
 input {
 	width:100%;
 	height:50px;
-	border:1px solid #e03e25;
+	border:1px solid #6a9d3f;
 	padding-left:20px;
+}
+input[type=submit] {
+    padding:0;
 }
 .common_inp {
     position: relative;
@@ -846,7 +854,7 @@ input {
 	width:100%;
 }
 .top_badge {
-    background-color: #e03e25;
+    background-color: #6a9d3f;
     color: #fff;
     height: 25px;
     right: 0;
@@ -863,7 +871,7 @@ input {
 }
 .top_badge p:after {
     border-right: 15px solid transparent;
-    border-top: 15px solid #e03e25;
+    border-top: 15px solid #6a9d3f;
     content: "";
     height: 0;
     position: absolute;
@@ -875,13 +883,13 @@ input {
 textarea{
 	height:150px;
 	width:100%;
-	border:1px solid #e03e25;
+	border:1px solid #6a9d3f;
 	padding-left:20px;
 	padding-top:15px;
 	
 }
  input[type="submit"]{
-	background-color:#e03e25;
+	background-color:#6a9d3f;
 	color:#fff;
 	margin-top:10px;
 	font-size:14px;
@@ -892,8 +900,8 @@ textarea{
 }
 input[type="submit"]:hover{
 	background-color:#fff;
-	border:1px solid #e03e25;
-	color:#e03e25;
+	border:1px solid #6a9d3f;
+	color:#6a9d3f;
 }
 #pcf {
     max-width: 800px;
@@ -918,7 +926,7 @@ input[type="submit"]:hover{
 	color:#fff;
 }
 .copy_right p span{
-	color:#e03e25;
+	color:#6a9d3f;
 }
 .bottom_menu ul{
     float: right;
@@ -934,10 +942,10 @@ input[type="submit"]:hover{
     padding-right: 20px;
 }
 .bottom_menu ul li.active a{
-	color:#e03e25;
+	color:#6a9d3f;
 }
 .bottom_menu ul li:hover a{
-	color:#e03e25;
+	color:#6a9d3f;
 }
 .homebase {
     font-size: 10px;
