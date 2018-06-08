@@ -157,7 +157,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .navbar-brand {
 	line-height:100px;
-	transition:0.4s
+	transition:0.4s;
+    padding-top: 30px;
 }
 .mainmenu ul li a i {
     padding-left: 10px;
@@ -251,6 +252,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     position: relative;
     z-index: 1;
 }
+.request {
+    color: #6a9d3f;
+}
+.nav.navbar-nav li a.request:hover,
+.nav.navbar-nav li a.request:focus {
+    color: #6a9d3f;
+}
+.nav.navbar-nav.navbar-right > li > a.request:before, .nav.navbar-nav.navbar-right  > li > a.request:after {
+    background: none;
+}
 /*-----------------------------------------------------------------------------------*/
 /*   2.     Banner_area
 /*-----------------------------------------------------------------------------------*/
@@ -317,8 +328,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     font-size: 30px;
 }
 .banner_text p{
-    font-size: 14px;
-	line-height:24px;
+    font-size: 20px;
 	padding:0 70px;
 	margin-bottom:50px;
 }
@@ -638,8 +648,8 @@ video{
 /*-----------------------------------------------------------------------------------*/
 
 .team_area{
-	padding-bottom:150px;
-    padding-top: 90px;
+    padding-bottom: 95px;
+    padding-top: 30px;
 }
 .team_total{
 	padding:30px 0;
@@ -672,7 +682,7 @@ video{
 .portfolio_area{
 	position:relative;
 	width:100%;
-	padding:100px 0;
+	padding:100px 0 30px;
 }
 .portfolio_area:before {
     background-color: #f1f1f1;
@@ -908,9 +918,35 @@ input[type="submit"]:hover{
     margin: 0 auto;
 }
 #pcf input[type="submit"] {
-    max-width: 200px;
+    width: 160px;
+    height: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    border: 0;
+    box-shadow: none;
+    background: #164468;
     display: block;
-    margin: 20px auto 50px;
+    border: 4px solid rgba(255,255,255,0.1);
+    position: relative;
+    top: -25px;
+}
+#pcf input[name='c_email'], #pcf input[name='c_name'], #pcf input[name='c_phone'] {
+    height: 45px;
+    padding: 0 20px;
+    background: #ffffff;
+    box-sizing: border-box;
+    box-shadow: none;
+    border-radius: 5px;
+    margin: 40px 5px 13px 5px;
+    width: 32%;
+}
+#pcf textarea[name='c_inquiry'] {
+    padding: 18px 6px 0 30px;
+    border-radius: 5px;
+}
+.pcf-label, .pcf-error-message {
+    display: none;
 }
 
 
@@ -920,6 +956,7 @@ input[type="submit"]:hover{
 
 .footer_area{
 	background-color:#000;
+    margin-top: 100px;
 }
 .copy_right p{
 	line-height:100px;
@@ -947,8 +984,10 @@ input[type="submit"]:hover{
 .bottom_menu ul li:hover a{
 	color:#6a9d3f;
 }
-.homebase {
+.homebase a {
     font-size: 10px;
+    color: #fff;
+    padding-right: 10px;
 }
 
 /*-----------------------------------------------------------------------------------*/

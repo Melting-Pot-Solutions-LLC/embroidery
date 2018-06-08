@@ -22,6 +22,7 @@
 @media only screen and (max-width: 1200px) {
     .fullscreen-bg__video{
         width: auto;
+        max-width: 100%;
     }
 }
 
