@@ -170,49 +170,49 @@
     
     
     $(window).on('resize scroll', function() {
+        let brands = [
+            ["./img/partners/maxresdefault.jpg","https://www.adidas.com/us"],
+            ["./img/partners/Comfort_Colors_logo_black.png","http://www.comfortcolors.com/us/"],
+            ["./img/partners/next-level-logo.jpg","https://www.nextlevelapparel.com/"],
+            ["./img/clients/logo-5-1.png","https://www.nike.com/us/en_us/"],
+            ["./img/clients/logo-1-1.png","#"],
+            ["./img/clients/logo-2-1.png","#"],
+            ["./img/clients/logo-3-1.png","#"],
+            ["./img/clients/logo-4-1.png","#"],
+            ["./img/clients/logo-17-1.png","#"],
+            ["./img/clients/logo-6-1.png","#"],
+            ["./img/clients/logo-7-1.png","#"],
+            ["./img/clients/logo-8-1.png","#"],
+            ["./img/clients/logo-10-1.png","#"],
+            ["./img/clients/logo-11-1.png","#"],
+            ["./img/clients/logo-12-1.png","#"],
+            ["./img/clients/logo-13-1.png","#"],
+            ["./img/clients/logo-14-1.png","#"],
+            ["./img/clients/logo-15-1.png","#"],
+            ["./img/clients/logo-16-1.png","#"],
+            ["./img/clients/logo-17-1.png","#"],
+            ["./img/clients/logo-18-1.png","#"],
+            ["./img/clients/logo-19-1.png","#"],
+            ["./img/clients/logo-20-1.png","#"]
+        ];
+        
         $("#team").each(function() {
-            let brands = [
-                ["./img/partners/maxresdefault.jpg","https://www.adidas.com/us"],
-                ["./img/partners/Comfort_Colors_logo_black.png","http://www.comfortcolors.com/us/"],
-                ["./img/partners/next-level-logo.jpg","https://www.nextlevelapparel.com/"],
-                ["./img/clients/logo-5-1.png","https://www.nike.com/us/en_us/"],
-                ["./img/clients/logo-1-1.png","#"],
-                ["./img/clients/logo-2-1.png","#"],
-                ["./img/clients/logo-3-1.png","#"],
-                ["./img/clients/logo-4-1.png","#"],
-                ["./img/clients/logo-17-1.png","#"],
-                ["./img/clients/logo-6-1.png","#"],
-                ["./img/clients/logo-7-1.png","#"],
-                ["./img/clients/logo-8-1.png","#"],
-                ["./img/clients/logo-10-1.png","#"],
-                ["./img/clients/logo-11-1.png","#"],
-                ["./img/clients/logo-12-1.png","#"],
-                ["./img/clients/logo-13-1.png","#"],
-                ["./img/clients/logo-14-1.png","#"],
-                ["./img/clients/logo-15-1.png","#"],
-                ["./img/clients/logo-16-1.png","#"],
-                ["./img/clients/logo-17-1.png","#"],
-                ["./img/clients/logo-18-1.png","#"],
-                ["./img/clients/logo-19-1.png","#"],
-                ["./img/clients/logo-20-1.png","#"]
-            ];
-            
             if ($(this).isInViewport()) {
-                console.log("boom")
                 for(let i=0; i<brands.length; i++) {
-                    setTimeout(function(){
-                        $(".brands-img-1").attr("src",brands[i][0]);
-                        $(".brands-site-1").attr("href",brands[i][1]);
-
-                        $(".brands-img-2").attr("src",brands[i+1][0]);
-                        $(".brands-site-2").attr("href",brands[i+1][1]);
-
-                        $(".brands-img-3").attr("src",brands[i+2][0]);
-                        $(".brands-site-3").attr("href",brands[i+2][1]);
-
-                        $(".brands-img-4").attr("src",brands[i+3][0]);
-                        $(".brands-site-4").attr("href",brands[i+3][1]);
-                    }, 2000);
+                    console.log(`"${brands[i][0]}"`)
+//                    setTimeout(function(){
+//                        $(".brands-img-1").attr("src",brands[i][0]);
+//                        $(".brands-site-1").attr("href",brands[i][1]);
+//
+//                        $(".brands-img-2").attr("src",brands[i+1][0]);
+//                        $(".brands-site-2").attr("href",brands[i+1][1]);
+//
+//                        $(".brands-img-3").attr("src",brands[i+2][0]);
+//                        $(".brands-site-3").attr("href",brands[i+2][1]);
+//
+//                        $(".brands-img-4").attr("src",brands[i+3][0]);
+//                        $(".brands-site-4").attr("href",brands[i+3][1]);
+//                    }, 2000);
                 }
             }
         });
