@@ -33,19 +33,7 @@
 		
 		// wow js
 		new WOW().init();
-        
-        //pause-play video
-//        var video = $("#video-bg");
-//        if ($(window).width() < 960) $(".play-pause").removeClass("fa-pause").addClass("fa-play");
-//        $(".play-pause").click(function(){
-//             if (video.get(0).paused) {
-//                video.get(0).play();
-//                 $(".play-pause").removeClass("fa-play").addClass("fa-pause");
-//              } else {
-//                video.get(0).pause();
-//                $(".play-pause").removeClass("fa-pause").addClass("fa-play");
-//              }
-//        });
+
         var video = $("#video-bg");
         if ($(window).width() < 960) {
             $(".banner_overlay").click(function(){ (video.get(0).paused) ?  video.get(0).play() : video.get(0).pause() });
@@ -165,60 +153,117 @@
         $("#pcf textarea[name='c_inquiry']").attr("placeholder", "What do you need?*");
 
      });
+
     
     
+    function isScrolledIntoView (elem) {
+        var docViewTop = $(window).scrollTop();
+        var docViewBottom = docViewTop + $(window).height();
+
+        var elemTop = $(elem).offset().top;
+        var elemBottom = elemTop + $(elem).height();
+
+        return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    }
+    let brands = [
+        ["./img/partners/maxresdefault.jpg","https://www.adidas.com/us"],
+        ["./img/partners/Comfort_Colors_logo_black.png","http://www.comfortcolors.com/us/"],
+        ["./img/partners/next-level-logo.jpg","https://www.nextlevelapparel.com/"],
+        ["./img/clients/logo-5-1.png","https://www.nike.com/us/en_us/"],
+        ["./img/clients/logo-1-1.png","#"],
+        ["./img/clients/logo-2-1.png","#"],
+        ["./img/clients/logo-3-1.png","#"],
+        ["./img/clients/logo-4-1.png","#"],
+        ["./img/clients/logo-17-1.png","#"],
+        ["./img/clients/logo-6-1.png","#"],
+        ["./img/clients/logo-7-1.png","#"],
+        ["./img/clients/logo-8-1.png","#"],
+        ["./img/clients/logo-10-1.png","#"],
+        ["./img/clients/logo-11-1.png","#"],
+        ["./img/clients/logo-12-1.png","#"],
+        ["./img/clients/logo-13-1.png","#"],
+        ["./img/clients/logo-14-1.png","#"],
+        ["./img/clients/logo-15-1.png","#"],
+        ["./img/clients/logo-16-1.png","#"],
+        ["./img/clients/logo-17-1.png","#"],
+        ["./img/clients/logo-18-1.png","#"],
+        ["./img/clients/logo-19-1.png","#"],
+        ["./img/clients/logo-20-1.png","#"]
+    ];
     
-    
-    $(window).on('resize scroll', function() {
-        let brands = [
-            ["./img/partners/maxresdefault.jpg","https://www.adidas.com/us"],
-            ["./img/partners/Comfort_Colors_logo_black.png","http://www.comfortcolors.com/us/"],
-            ["./img/partners/next-level-logo.jpg","https://www.nextlevelapparel.com/"],
-            ["./img/clients/logo-5-1.png","https://www.nike.com/us/en_us/"],
-            ["./img/clients/logo-1-1.png","#"],
-            ["./img/clients/logo-2-1.png","#"],
-            ["./img/clients/logo-3-1.png","#"],
-            ["./img/clients/logo-4-1.png","#"],
-            ["./img/clients/logo-17-1.png","#"],
-            ["./img/clients/logo-6-1.png","#"],
-            ["./img/clients/logo-7-1.png","#"],
-            ["./img/clients/logo-8-1.png","#"],
-            ["./img/clients/logo-10-1.png","#"],
-            ["./img/clients/logo-11-1.png","#"],
-            ["./img/clients/logo-12-1.png","#"],
-            ["./img/clients/logo-13-1.png","#"],
-            ["./img/clients/logo-14-1.png","#"],
-            ["./img/clients/logo-15-1.png","#"],
-            ["./img/clients/logo-16-1.png","#"],
-            ["./img/clients/logo-17-1.png","#"],
-            ["./img/clients/logo-18-1.png","#"],
-            ["./img/clients/logo-19-1.png","#"],
-            ["./img/clients/logo-20-1.png","#"]
-        ];
+    let counter = 4;
+    var galleryTimer = setInterval(function() {
         
-        $("#team").each(function() {
-            if ($(this).isInViewport()) {
-                for(let i=0; i<brands.length; i++) {
-                    console.log(`"${brands[i][0]}"`)
-//                    setTimeout(function(){
-//                        $(".brands-img-1").attr("src",brands[i][0]);
-//                        $(".brands-site-1").attr("href",brands[i][1]);
-//
-//                        $(".brands-img-2").attr("src",brands[i+1][0]);
-//                        $(".brands-site-2").attr("href",brands[i+1][1]);
-//
-//                        $(".brands-img-3").attr("src",brands[i+2][0]);
-//                        $(".brands-site-3").attr("href",brands[i+2][1]);
-//
-//                        $(".brands-img-4").attr("src",brands[i+3][0]);
-//                        $(".brands-site-4").attr("href",brands[i+3][1]);
-//                    }, 2000);
-                }
-            }
-        });
+        $(".brands-img-1").attr("src",brands[counter][0]);
+        $(".brands-site-1").attr("href",brands[counter][1]);
+
+        $(".brands-img-2").attr("src",brands[counter+1][0]);
+        $(".brands-site-2").attr("href",brands[counter+1][1]);
+
+        $(".brands-img-3").attr("src",brands[counter+2][0]);
+        $(".brands-site-3").attr("href",brands[counter+2][1]);
+
+        $(".brands-img-4").attr("src",brands[counter+3][0]);
+        $(".brands-site-4").attr("href",brands[counter+3][1]);
+
+        counter += 4;
+        
+      if (isScrolledIntoView($('#support-logo'))) {
+            let slowerChange = setTimeout(function(){
+                $(".brands-img-1").attr("src",brands[counter][0]);
+                $(".brands-site-1").attr("href",brands[counter][1]);
+
+                $(".brands-img-2").attr("src",brands[counter+1][0]);
+                $(".brands-site-2").attr("href",brands[counter+1][1]);
+
+                $(".brands-img-3").attr("src",brands[counter+2][0]);
+                $(".brands-site-3").attr("href",brands[counter+2][1]);
+
+                $(".brands-img-4").attr("src",brands[counter+3][0]);
+                $(".brands-site-4").attr("href",brands[counter+3][1]);
+            }, 5000);
+            counter += 4;
+            if (counter >= 19) counter = 0;
+      }
+      else if (!isScrolledIntoView($('#support-logo'))) {
+          clearInterval(galleryTimer);
+      }
+    }, 3000);
+
+    
+     $(window).on('resize scroll', function() {
+        if (isScrolledIntoView($('#support-logo'))) {
+            var galleryTimer = setInterval(function() {
+              if (isScrolledIntoView($('#support-logo'))) {
+                    let slowerChange = setTimeout(function(){
+                        $(".brands-img-1").attr("src",brands[counter][0]);
+                        $(".brands-site-1").attr("href",brands[counter][1]);
+
+                        $(".brands-img-2").attr("src",brands[counter+1][0]);
+                        $(".brands-site-2").attr("href",brands[counter+1][1]);
+
+                        $(".brands-img-3").attr("src",brands[counter+2][0]);
+                        $(".brands-site-3").attr("href",brands[counter+2][1]);
+
+                        $(".brands-img-4").attr("src",brands[counter+3][0]);
+                        $(".brands-site-4").attr("href",brands[counter+3][1]);
+                    }, 4000)
+                    
+                    counter += 4;
+                    if (counter >= 19) counter = 0;
+              }
+              else if (!isScrolledIntoView($('#support-logo'))) {
+                  clearInterval(galleryTimer);
+                  counter = 0;
+              }
+            }, 6000);
+        }
+         
+         if (!isScrolledIntoView($('#support-logo'))) {
+              counter = 0;
+          }
     });
     
     
-
     
 }(jQuery));	
