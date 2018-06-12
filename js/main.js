@@ -192,43 +192,43 @@
     ];
     
     let counter = 4;
-    var galleryTimer = setInterval(function() {
-        
-        $(".brands-img-1").attr("src",brands[counter][0]);
-        $(".brands-site-1").attr("href",brands[counter][1]);
-
-        $(".brands-img-2").attr("src",brands[counter+1][0]);
-        $(".brands-site-2").attr("href",brands[counter+1][1]);
-
-        $(".brands-img-3").attr("src",brands[counter+2][0]);
-        $(".brands-site-3").attr("href",brands[counter+2][1]);
-
-        $(".brands-img-4").attr("src",brands[counter+3][0]);
-        $(".brands-site-4").attr("href",brands[counter+3][1]);
-
-        counter += 4;
-        
-      if (isScrolledIntoView($('#support-logo'))) {
-            let slowerChange = setTimeout(function(){
-                $(".brands-img-1").attr("src",brands[counter][0]);
-                $(".brands-site-1").attr("href",brands[counter][1]);
-
-                $(".brands-img-2").attr("src",brands[counter+1][0]);
-                $(".brands-site-2").attr("href",brands[counter+1][1]);
-
-                $(".brands-img-3").attr("src",brands[counter+2][0]);
-                $(".brands-site-3").attr("href",brands[counter+2][1]);
-
-                $(".brands-img-4").attr("src",brands[counter+3][0]);
-                $(".brands-site-4").attr("href",brands[counter+3][1]);
-            }, 5000);
-            counter += 4;
-            if (counter >= 19) counter = 0;
-      }
-      else if (!isScrolledIntoView($('#support-logo'))) {
-          clearInterval(galleryTimer);
-      }
-    }, 3000);
+//    var galleryTimer = setInterval(function() {
+//        
+//        $(".brands-img-1").attr("src",brands[counter][0]);
+//        $(".brands-site-1").attr("href",brands[counter][1]);
+//
+//        $(".brands-img-2").attr("src",brands[counter+1][0]);
+//        $(".brands-site-2").attr("href",brands[counter+1][1]);
+//
+//        $(".brands-img-3").attr("src",brands[counter+2][0]);
+//        $(".brands-site-3").attr("href",brands[counter+2][1]);
+//
+//        $(".brands-img-4").attr("src",brands[counter+3][0]);
+//        $(".brands-site-4").attr("href",brands[counter+3][1]);
+//
+//        counter += 4;
+//        
+//      if (isScrolledIntoView($('#support-logo'))) {
+//            let slowerChange = setTimeout(function(){
+//                $(".brands-img-1").attr("src",brands[counter][0]);
+//                $(".brands-site-1").attr("href",brands[counter][1]);
+//
+//                $(".brands-img-2").attr("src",brands[counter+1][0]);
+//                $(".brands-site-2").attr("href",brands[counter+1][1]);
+//
+//                $(".brands-img-3").attr("src",brands[counter+2][0]);
+//                $(".brands-site-3").attr("href",brands[counter+2][1]);
+//
+//                $(".brands-img-4").attr("src",brands[counter+3][0]);
+//                $(".brands-site-4").attr("href",brands[counter+3][1]);
+//            }, 4000);
+//            counter += 4;
+//            if (counter >= 19) counter = 0;
+//      }
+//      else if (!isScrolledIntoView($('#support-logo'))) {
+//          clearInterval(galleryTimer);
+//      }
+//    }, 4000);
 
     
      $(window).on('resize scroll', function() {
@@ -256,7 +256,7 @@
                   clearInterval(galleryTimer);
                   counter = 0;
               }
-            }, 6000);
+            }, 3000);
         }
          
          if (!isScrolledIntoView($('#support-logo'))) {
