@@ -24,29 +24,38 @@
         width: auto;
         max-width: 100%;
     }
+    .navbar>.container .navbar-brand {
+        width: 330px;
+    }
+    .screens, .embroidery, .signs {
+        padding-bottom: 70px;
+    }
 }
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	.bottom_padding {
-		padding-bottom: 55px;
+		padding-bottom: 15px;
 	}
 	.section_padding {
 		padding-top: 40px;
 	}
 		
-	.navbar-brand {
-		height: 100px;
-		width: 160px;
+	.navbar>.container .navbar-brand {
+        width: 250px;
+        padding-top: 37px;
+        height: 160px;
 	}
 	.navbar-brand img {
 		max-height: 100%;
 	}
-	.nav.navbar-nav li a {
-		font-size: 14px;
+    .nav.navbar-nav li a {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+	.nav.navbar-nav>li>a {
 		line-height: 100px;
-		padding: 0 10px;
 	}
     .is-sticky .navbar-brand img {
         width: 100%;
@@ -54,6 +63,12 @@
 	.portfolio_area {
 		padding:0;
 	}	
+    .team_area {
+        padding-bottom: 15px;
+    }
+    #pcf input[name='c_email'], #pcf input[name='c_name'], #pcf input[name='c_phone'] {
+        margin: 40px 3px 13px 3px;
+    }
 	.portfolio_area:before, .portfolio_area:after{
 		display:none;
 	}
@@ -106,9 +121,15 @@
 	.fullscreen-bg {
 		height:100%;
 	}
+    .supported-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+    }
 
 }
-/* Mobile Layout: 320px. */
+
 @media only screen and (max-width: 767px) { 
 
 	.section_padding {
@@ -150,7 +171,8 @@
 		line-height: 40px;
 	}
 	.is-sticky  ul.nav.navbar-nav li a {
-		line-height: 40px;
+		line-height: 30px;
+        padding: 0 15px;
 	}
 	.nav.navbar-nav.navbar-right {
 		margin-top: 0;
@@ -160,11 +182,17 @@
 	}
 	.mainmenu ul.nav.navbar-nav li ul {
 		display: block;
-		background-color:none;
         position: initial;
         opacity: 1;
         visibility: visible;
+        padding: 0 15px 18px;
 	}
+    .mainmenu ul.nav.navbar-nav li ul li {
+        border: none;
+    }
+    .mainmenu ul li a i {
+        padding-top: 18px;
+    }
 	.banner_text {
 		margin-top: -90px;
 	}
@@ -256,16 +284,6 @@
 		overflow:hidden;
 		height:100%;
 	}	
-}
-
-
-/* Wide Mobile Layout: 480px. */
-@media only screen and (min-width: 480px) and (max-width: 767px) { 
-	.container {
-		width: 450px;
-		margin: 0 auto;
-	}
-	
 	.header-top-left{
 		padding-left:20%;
 	}
@@ -273,5 +291,19 @@
 	.bottom_icon {
 		padding-left: 135px;
 	}
+    #pcf input[name='c_email'], #pcf input[name='c_name'], #pcf input[name='c_phone'] {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+    .portfolio_area .single_port {
+        margin-bottom: 0;
+    }
+}
 
+
+/* Wide Mobile Layout: 480px. */
+@media only screen and (max-width: 480px) { 
+    .navbar>.container .navbar-brand {
+        width: 200px;
+    }
 }

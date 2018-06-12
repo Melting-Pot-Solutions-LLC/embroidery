@@ -126,7 +126,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .header-top-left p {
     color: rgb(255, 255, 255);
-    float: left;
+    display: inline-block;
     line-height: 60px;
     margin-bottom: 0;
     margin-right: 38px;
@@ -197,13 +197,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	width:100%;
 }
 .mainmenu ul.nav.navbar-nav li ul {
-    background-color: #fff;
     border: 2px solid rgba(0, 0, 0, 0);
     left: 20px;
     list-style: outside none none;
     margin: 0;
     opacity: 0;
-    padding: 15px;
+    padding: 15px 5px;
     position: absolute;
     top: 80px;
 	-webkit-transition: all 0.4s ease;
@@ -211,7 +210,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-ms-transition: all 0.4s ease;
 	transition: all 0.4s ease;
     visibility: hidden;
-    width: 200px;
+    width: 135px;
     z-index: -1;
 }
 .mainmenu ul.nav.navbar-nav li ul li{
@@ -958,12 +957,18 @@ input[type="submit"]:hover{
 	background-color:#000;
     margin-top: 100px;
 }
+.copy_right {
+    min-height: 85px;
+}
 .copy_right p{
-	line-height:100px;
 	color:#fff;
+    padding-top: 20px;
 }
 .copy_right p span{
 	color:#6a9d3f;
+}
+.copy_right img {
+    width: 100px;
 }
 .bottom_menu ul{
     float: right;
