@@ -202,7 +202,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     list-style: outside none none;
     margin: 0;
     opacity: 0;
-    padding: 15px 5px;
+    padding: 0 8px;
     position: absolute;
     top: 80px;
 	-webkit-transition: all 0.4s ease;
@@ -210,7 +210,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-ms-transition: all 0.4s ease;
 	transition: all 0.4s ease;
     visibility: hidden;
-    width: 135px;
+    width: 150px;
     z-index: -1;
     background: #f1f1f1;
 }
@@ -220,6 +220,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 .mainmenu ul.nav.navbar-nav li ul a{
 	color:#333333;
+    line-height: 56px;
+    font-size: 16px;
 }
 .mainmenu ul.nav.navbar-nav li ul :hover a{
 	color:#6a9d3f;
@@ -328,8 +330,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     font-size: 30px;
 }
 .banner_text p{
-    font-size: 20px;
-	padding:0 70px;
+    font-size: 17px;
 	margin-bottom:50px;
 }
 
