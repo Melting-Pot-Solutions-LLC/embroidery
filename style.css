@@ -1023,10 +1023,10 @@ input[type="submit"]:hover {
     margin-top: 120px;
 }
 .form-alert-message {
-    width: max-content;
-    margin: 0 auto;
+    display: inline-block;
+    margin-left: 38px;
 }
-input[type="date"]::-webkit-inner-spin-button { 
+input[type="date"]::-webkit-inner-spin-button {
     display: none;
 }
 .formw .gform_wrapper .top_label .gfield_label {
