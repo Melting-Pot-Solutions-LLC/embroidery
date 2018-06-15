@@ -143,16 +143,16 @@
         });
     });
 
-    $(function(){
-       $("#printavo-contact-form").printavoInquiryForm("5097ddf700200282fa80bd0483c677bb");
-        
-        // Form styles
-        $("#pcf input[name='c_name']").attr("placeholder", "Name*");
-        $("#pcf input[name='c_email']").attr("placeholder", "Email*");
-        $("#pcf input[name='c_phone']").attr("placeholder", "Phone*");
-        $("#pcf textarea[name='c_inquiry']").attr("placeholder", "What do you need?*");
-
-     });
+//    $(function(){
+//       $("#printavo-contact-form").printavoInquiryForm("5097ddf700200282fa80bd0483c677bb");
+//        
+//        // Form styles
+//        $("#pcf input[name='c_name']").attr("placeholder", "Name*");
+//        $("#pcf input[name='c_email']").attr("placeholder", "Email*");
+//        $("#pcf input[name='c_phone']").attr("placeholder", "Phone*");
+//        $("#pcf textarea[name='c_inquiry']").attr("placeholder", "What do you need?*");
+//
+//     });
 
     
     
@@ -192,44 +192,6 @@
     ];
     
     let counter = 4;
-//    var galleryTimer = setInterval(function() {
-//        
-//        $(".brands-img-1").attr("src",brands[counter][0]);
-//        $(".brands-site-1").attr("href",brands[counter][1]);
-//
-//        $(".brands-img-2").attr("src",brands[counter+1][0]);
-//        $(".brands-site-2").attr("href",brands[counter+1][1]);
-//
-//        $(".brands-img-3").attr("src",brands[counter+2][0]);
-//        $(".brands-site-3").attr("href",brands[counter+2][1]);
-//
-//        $(".brands-img-4").attr("src",brands[counter+3][0]);
-//        $(".brands-site-4").attr("href",brands[counter+3][1]);
-//
-//        counter += 4;
-//        
-//      if (isScrolledIntoView($('#support-logo'))) {
-//            let slowerChange = setTimeout(function(){
-//                $(".brands-img-1").attr("src",brands[counter][0]);
-//                $(".brands-site-1").attr("href",brands[counter][1]);
-//
-//                $(".brands-img-2").attr("src",brands[counter+1][0]);
-//                $(".brands-site-2").attr("href",brands[counter+1][1]);
-//
-//                $(".brands-img-3").attr("src",brands[counter+2][0]);
-//                $(".brands-site-3").attr("href",brands[counter+2][1]);
-//
-//                $(".brands-img-4").attr("src",brands[counter+3][0]);
-//                $(".brands-site-4").attr("href",brands[counter+3][1]);
-//            }, 4000);
-//            counter += 4;
-//            if (counter >= 19) counter = 0;
-//      }
-//      else if (!isScrolledIntoView($('#support-logo'))) {
-//          clearInterval(galleryTimer);
-//      }
-//    }, 4000);
-
     
      $(window).on('resize scroll', function() {
         if (isScrolledIntoView($('#support-logo'))) {
@@ -265,5 +227,47 @@
     });
     
     
+    // Get the form.
+	var form = $('#request-form');
+
+	// Get the messages div.
+	var formMessages = $('.form-alert-message');
+
+	// Set up an event listener for the contact form.
+	$(form).submit(function(e) {
+		// Stop the browser from submitting the form.
+		e.preventDefault();
+
+		// Serialize the form data.
+		var formData = $(form).serialize();
+
+		// Submit the form using AJAX.
+		$.ajax({
+			type: 'POST',
+			url: $(form).attr('action'),
+			data: formData
+		})
+		.done(function(response) {
+			// Make sure that the formMessages div has the 'success' class.
+			$(formMessages).removeClass('hidden');
+			$(formMessages).removeClass('alert-danger');
+			$(formMessages).addClass('alert-success');
+
+			// Set the message text.
+			$(formMessages).text(response);
+		})
+		.fail(function(data) {
+			// Make sure that the formMessages div has the 'error' class.
+			$(formMessages).removeClass('hidden');
+			$(formMessages).addClass('alert-danger');
+
+			// Set the message text.
+			if (data.responseText !== '') {
+				$(formMessages).text(data.responseText);
+			} else {
+				$(formMessages).text('Oops! An error occured and your message could not be sent.');
+			}
+		});
+	});
     
 }(jQuery));	
