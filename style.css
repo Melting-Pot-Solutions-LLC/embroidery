@@ -1097,7 +1097,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .page_content .gform_wrapper .top_label .gfield_label {
     color: #164468;
     font-size: 18px;
-    border-bottom: 2px solid #cd3333;
+    border-bottom: 2px solid #6a9d3f;
     padding: 0 0 5px 0;
 }
 .page_content .gform_wrapper [type="checkbox"]:not(:checked),
@@ -1195,7 +1195,7 @@ input[type="date"]::-webkit-inner-spin-button {
     color: #164468;
     font-size: 18px;
     line-height: 24px;
-    background: url(img/arrow2n.png) scroll no-repeat right top;
+    background: url(img/arrow2n-green.png) scroll no-repeat right top;
     font-family: 'Sanchez-Regular';
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1216,9 +1216,14 @@ input[type="date"]::-webkit-inner-spin-button {
     font-family: 'Sanchez-Regular';
 }
 .page_content .gform_wrapper input.submit-btn {
-    width: auto;
+    width: 150px;
     margin: 0 auto;
     border: none;
+    color: #fff;
+    background: #6a9d3f;
+}
+.page_content .gform_wrapper input.submit-btn:hover {
+    background: #4b6f2d;
 }
 .page_content .gform_wrapper .top_label .gfield_description {
     font-style: italic;
@@ -1288,7 +1293,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .page_content .gform_wrapper .custom_label {
     color: #164468;
     font-size: 18px;
-    border-bottom: 2px solid #cd3333;
+    border-bottom: 2px solid #6a9d3f;
     padding: 0 0 5px 0;
     margin-bottom: 38px;
 }
