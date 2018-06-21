@@ -239,8 +239,10 @@ input:-webkit-autofill:focus {
 }
 .mainmenu ul.nav.navbar-nav li ul a {
     color: #333333;
-    line-height: 56px;
+    line-height: inherit;
     font-size: 16px;
+    padding: 16px 0;
+    display: inline-block;
 }
 .mainmenu ul.nav.navbar-nav li ul:hover a {
     color: #6a9d3f;
@@ -1094,8 +1096,12 @@ input[type="date"]::-webkit-inner-spin-button {
 .page_content .gform_wrapper .gform_heading {
     text-align: center;
 }
+.btn-primary {
+    background-color: #0061a3;
+    border-color: #0061a3; 
+}
 .page_content .gform_wrapper .top_label .gfield_label {
-    color: #164468;
+    color: #0061a3;
     font-size: 18px;
     border-bottom: 2px solid #6a9d3f;
     padding: 0 0 5px 0;
@@ -1291,7 +1297,7 @@ input[type="date"]::-webkit-inner-spin-button {
     right: 10px;
 }
 .page_content .gform_wrapper .custom_label {
-    color: #164468;
+    color: #0061a3;
     font-size: 18px;
     border-bottom: 2px solid #6a9d3f;
     padding: 0 0 5px 0;
