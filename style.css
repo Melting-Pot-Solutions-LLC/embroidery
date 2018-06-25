@@ -724,6 +724,9 @@ video {
 .social-icon a i {
     padding-bottom: 20px;
 }
+.brands-portfolio img {
+    max-width: 250px;
+}
 
 /*-----------------------------------------------------------------------------------*/
 
