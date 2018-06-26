@@ -180,6 +180,11 @@ input:-webkit-autofill:focus {
     padding-left: 10px;
     transition: 0.4s;
 }
+.navbar-brand>img {
+    display: block;
+    max-width: 280px;
+    margin-top: 7px;
+}
 .nav.navbar-nav li a {
     font-family: "Roboto Slab", serif;
     font-size: 18px;
@@ -537,15 +542,6 @@ video {
     transform: skew(0deg, 15deg);
     /* Standard syntax */
 }
-.feature_content img {
-    border-radius: 50%;
-    padding: 20px;
-    background: #f2f2f1;
-    border: 1px solid #6a9d3f;
-}
-.feature_content img:hover {
-    background: #6a9d3f;
-}
 .single_feature i {
     color: #6a9d3f;
     font-size: 48px;
@@ -867,6 +863,18 @@ video {
 /*  7.     Contact_us_area
 /*-----------------------------------------------------------------------------------*/
 
+.contact-page .header-top-left a {
+    color: #333;
+}
+.contact-page .header-top-left p {
+    font-size: 26px;
+    font-weight: bold;
+    display: block;
+    color: #333;
+}
+.contact-page .header-top-left {
+    margin-bottom: 50px;
+}
 .us {
     position: relative;
     padding-bottom: 25px;
@@ -1338,7 +1346,9 @@ input[type="date"]::-webkit-inner-spin-button {
 
 /*  8.     Footer_area
 /*-----------------------------------------------------------------------------------*/
-
+.contact-page {
+    padding-bottom: 100px;
+}
 .footer_area {
     background-color: #000;
     margin-top: 100px;

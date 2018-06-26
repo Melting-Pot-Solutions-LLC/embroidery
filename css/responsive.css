@@ -18,9 +18,8 @@
     .nav.navbar-nav li a {
         font-size: 16px;
     }
-    .navbar-brand>img {
-        max-width: 250px;
-        margin-top: 6px;
+    .navbar-brand {
+        display: none;
     }
     .us h4 {
         padding-left: 20px;
@@ -49,15 +48,6 @@
     }
     .section_padding {
         padding-top: 40px;
-    }
-    .navbar>.container .navbar-brand {
-        width: 250px;
-        padding-top: 37px;
-        height: 160px;
-        display: none;
-    }
-    .navbar-brand img {
-        max-height: 100%;
     }
     .nav.navbar-nav li a,
     .mainmenu ul.nav.navbar-nav li ul a {
@@ -143,6 +133,14 @@
     }
 }
 @media only screen and (max-width: 767px) {
+    .navbar>.container .navbar-brand {
+        width: 170px;
+        display: block;
+    }
+    .navbar-brand>img {
+        max-width: 261px;
+        margin-top: 7px;
+    }
     .section_padding {
         padding-top: 50px;
     }
@@ -302,7 +300,10 @@
         height: 100%;
     }
     .header-top-left {
-        padding-left: 20%;
+        padding-left: 10px;
+    }
+    .contact-page .header-top-left p {
+        font-size: 17px;
     }
     .bottom_icon {
         padding-left: 135px;
@@ -328,7 +329,12 @@
 
 @media only screen and (max-width: 480px) {
     .navbar>.container .navbar-brand {
-        width: 200px;
+        width: 170px;
+        display: block;
+    }
+    .navbar-brand>img {
+        max-width: 210px;
+        margin-top: 10px;
     }
     .gform_wrapper ul {
         padding-left: 0;
