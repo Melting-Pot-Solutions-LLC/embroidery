@@ -138,7 +138,7 @@ input:-webkit-autofill:focus {
 /*-----------------------------------------------------------------------------------*/
 
 .header_top {
-    background-color: #113678;
+    background-color: #0061a3;
 }
 .header-top-left p {
     color: rgb(255, 255, 255);
@@ -878,7 +878,7 @@ video {
     margin-bottom: 50px;
 }
 .contact-blocks {
-    background: #065599;
+    background: #0061a3;
     border: 3px solid #6a9d3f;
     text-align: center;
     padding: 10px;
@@ -897,10 +897,10 @@ video {
 }
 
 .section7 .lt								{float: left; max-width: 500px;}
-.section7 .lt h4							{font-size: 30px; line-height: 30px; color: #164468; padding: 0 0 20px 0;}
-.section7 .lt p								{color: #164468; font-size: 20px; line-height: 32px;}
+.section7 .lt h4							{font-size: 22px; line-height: 30px; color: #0061a3; padding: 0 0 20px 0;}
+.section7 .lt p								{color: #0061a3; font-size: 18px; line-height: 32px;}
 .section7 .lt p span						{color: #6a9d3f;}
-.section7 .lt h6							{color: #164468; font-size: 26px; line-height: 36px;}
+.section7 .lt h6, .section7 .lt a			{color: #0061a3; font-size: 18px; line-height: 36px; margin-bottom: 0;}
 .section7 .lt h6 span						{color: #6a9d3f;}
 
 .section7 .rt								{float: right; margin: 5px 0 0 0;}
@@ -1381,7 +1381,7 @@ input[type="date"]::-webkit-inner-spin-button {
 /*  8.     Footer_area
 /*-----------------------------------------------------------------------------------*/
 .footer_area {
-    background-color: #000;
+    background-color: #0061a3;
     margin-top: 100px;
 }
 .copy_right {
