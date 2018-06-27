@@ -138,7 +138,7 @@ input:-webkit-autofill:focus {
 /*-----------------------------------------------------------------------------------*/
 
 .header_top {
-    background-color: #000;
+    background-color: #113678;
 }
 .header-top-left p {
     color: rgb(255, 255, 255);
@@ -146,6 +146,7 @@ input:-webkit-autofill:focus {
     line-height: 60px;
     margin-bottom: 0;
     margin-right: 38px;
+    font-size: 22px;
 }
 .header-top-left i {
     margin-right: 10px;
@@ -153,6 +154,7 @@ input:-webkit-autofill:focus {
 }
 .header-top-left a {
     color: #fff;
+    font-size: 22px;
 }
 .header-top-left a:hover {
     color: #fff;
@@ -875,6 +877,38 @@ video {
 .contact-page .header-top-left {
     margin-bottom: 50px;
 }
+.contact-blocks {
+    background: #065599;
+    border: 3px solid #6a9d3f;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact-blocks a {
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+}
+.contact-blocks a strong {
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.section7 .lt								{float: left; max-width: 500px;}
+.section7 .lt h4							{font-size: 30px; line-height: 30px; color: #164468; padding: 0 0 20px 0;}
+.section7 .lt p								{color: #164468; font-size: 20px; line-height: 32px;}
+.section7 .lt p span						{color: #6a9d3f;}
+.section7 .lt h6							{color: #164468; font-size: 26px; line-height: 36px;}
+.section7 .lt h6 span						{color: #6a9d3f;}
+
+.section7 .rt								{float: right; margin: 5px 0 0 0;}
+.section7 .rt a								{width: 500px; display: block; border: 5px solid rgba(0,0,0,0.2); border-radius: 10px; position: relative;}
+.section7 .rt img							{border-radius: 10px;}
+.section7 .rt a span						{font-size: 18px; color: #ffffff; position: absolute; top: 30px; left: 0; width: 100%; padding: 10px 0; background: #cd3333; text-align: center;}
+
+.section7 .rt a:hover span {background: #164468;}
 .us {
     position: relative;
     padding-bottom: 25px;
@@ -1346,9 +1380,6 @@ input[type="date"]::-webkit-inner-spin-button {
 
 /*  8.     Footer_area
 /*-----------------------------------------------------------------------------------*/
-.contact-page {
-    padding-bottom: 100px;
-}
 .footer_area {
     background-color: #000;
     margin-top: 100px;
