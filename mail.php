@@ -1,69 +1,70 @@
 <?php
+if (isset ($_POST['email'])) {
+    
+    $typeOfGarment = implode(', ', $_POST['typeOfGarment']);
+    $howManyDoYouNeed = implode(', ', $_POST['howManyDoYouNeed']);
+    $whichDoYouPrefer = implode(', ', $_POST['whichDoYouPrefer']);
+    $howManyColorsOne = $_POST['howManyColorsOne'];
+    $howManyColorsSecond = $_POST['howManyColorsSecond'];
+    $calendar_date = date('Y-m-d', strtotime(trim($_POST['calendar'])));
+    $firstName = $_POST['firstName'];
+    $lastName = $_POST['lastName'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    
+    
+  $to = "steven@customemb.net"; 
+  $subject = "New contact from website ".$_SERVER['HTTP_REFERER'];
+    
+    $message = "Type of garment: $typeOfGarment \n";
+    $message .= "Quantity: $howManyDoYouNeed \n";
+    $message .= "Which Do You Prefer: $whichDoYouPrefer \n";
+    $message .= "Colors on 1st printing location: $howManyColorsOne \n";
+    $message .= "Colors on 2st printing location: $howManyColorsSecond \n";
+    $message .= "Terms: $calendar_date \n";
+    $message .= "First Name: $firstName \n";
+    $message .= "Last Name: $lastName \n";
+    $message .= "Email: $email \n";
+    $message .= "Phone: $phone \n";
+    
+  $boundary = md5(date('r', time()));
+  $filesize = '';
+  $headers = "MIME-Version: 1.0\r\n";
+  $headers .= "From: " . $email . "\r\n";
+  $headers .= "Reply-To: " . $email . "\r\n";
+  $headers .= "Content-Type: multipart/mixed; boundary=\"$boundary\"\r\n";
+  $message="
+Content-Type: multipart/mixed; boundary=\"$boundary\"
 
-    // Only process POST reqeusts.
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+--$boundary
+Content-Type: text/plain; charset=\"utf-8\"
+Content-Transfer-Encoding: 7bit
 
-        $typeOfGarment = implode(', ', $_POST['typeOfGarment']);
-        $howManyDoYouNeed = implode(', ', $_POST['howManyDoYouNeed']);
-        $whichDoYouPrefer = implode(', ', $_POST['whichDoYouPrefer']);
-        
-        $howManyColorsOne = trim($_POST['howManyColorsOne']);
-        $howManyColorsSecond = trim($_POST['howManyColorsSecond']);
-        
-        $calendar_date = date('Y-m-d', strtotime(trim($_POST['calendar'])));
-        
-        $firstName = trim($_POST['firstName']);
-        $lastName = trim($_POST['lastName']);
-        $email = trim($_POST['email']);
-        $phone = trim($_POST['phone']);
-        
+$message";
+  for($i=0;$i<count($_FILES['fileFF']['name']);$i++) {
+     if(is_uploaded_file($_FILES['fileFF']['tmp_name'][$i])) {
+         $attachment = chunk_split(base64_encode(file_get_contents($_FILES['fileFF']['tmp_name'][$i])));
+         $filename = $_FILES['fileFF']['name'][$i];
+         $filetype = $_FILES['fileFF']['type'][$i];
+         $filesize += $_FILES['fileFF']['size'][$i];
+         $message.="
 
-        // Check that data was sent to the mailer.
-        if ( empty($firstName) OR empty($lastName) OR empty($phone) OR empty($calendar_date) OR empty($howManyColorsSecond) OR empty($howManyColorsOne)) {
-            // Set a 400 (bad request) response code and exit.
-            http_response_code(400);
-            echo "Please complete the form and try again.";
-            exit;
-        }
+--$boundary
+Content-Type: \"$filetype\"; name=\"$filename\"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=\"$filename\"
 
-        // Set the recipient email address.
-        // FIXME: Update this to your desired email address.
-        $recipient = "steven@customemb.net";
+$attachment";
+     }
+   }
+   $message.="
+--$boundary--";
 
-        // Set the email subject.
-        $subject = "New contact from website";
-
-        // Build the email content.
-        $email_content = "Type of garment: $typeOfGarment \n";
-        $email_content .= "Quantity: $howManyDoYouNeed \n";
-        $email_content .= "Which Do You Prefer: $whichDoYouPrefer \n";
-        $email_content .= "Colors on 1st printing location: $howManyColorsOne \n";
-        $email_content .= "Colors on 2st printing location: $howManyColorsSecond \n";
-        $email_content .= "Terms: $calendar_date \n";
-        $email_content .= "First Name: $firstName \n";
-        $email_content .= "Last Name: $lastName \n";
-        $email_content .= "Email: $email \n";
-        $email_content .= "Phone: $phone \n";
-
-
-        // Build the email headers.
-        $email_headers = "From: $name <$email>";
-
-        // Send the email.
-        if (mail($recipient, $subject, $email_content, $email_headers)) {
-            // Set a 200 (okay) response code.
-            http_response_code(200);
-            echo "Thank You! Your message has been sent.";
-        } else {
-            // Set a 500 (internal server error) response code.
-            http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
-        }
-
-    } else {
-        // Not a POST request, set a 403 (forbidden) response code.
-        http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
-    }
-
+  if ($filesize < 10000000) { 
+    mail($to, $subject, $message, $headers);
+    echo 'Thank You! Your message has been sent.';
+  } else {
+    echo 'The size of all files exceeds 10 MB.';
+  }
+}
 ?>

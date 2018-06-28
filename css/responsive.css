@@ -343,4 +343,7 @@
     .form-alert-message {
         margin-left: 0;
     }
+    .attach {
+        padding-left: 0;
+    }
 }

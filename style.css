@@ -1349,6 +1349,15 @@ input[type="date"]::-webkit-inner-spin-button {
     padding: 0 0 5px 0;
     margin-bottom: 38px;
 }
+.attach {
+    padding-left: 40px;
+    margin-top: 40px;
+}
+.page_content .gform_wrapper .attach input {
+    border: none;
+    padding: 0;
+    margin-top: 9px;
+}
 .wrapper {
     overflow: hidden;
 }

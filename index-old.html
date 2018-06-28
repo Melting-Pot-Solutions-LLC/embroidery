@@ -668,7 +668,7 @@
     <!--==============================portfolio_area end ===============================-->
     <div class="page_content container" id="request">
         <div class="gform_wrapper row">
-            <form enctype="multipart/form-data" method="post" id="feedback-form" class="contact-form">
+            <form method="post" action="mail.php" id="request-form">
                 <div class="section_title">
                     <h2>Contact us for a quote</h2>
                 </div>
@@ -770,10 +770,6 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="top_label attach">
-                                <label class="gfield_label">Attach file</label>
-                                <input type="file" name="fileFF[]" multiple id="fileFF" class="w100 file-input">
-                            </div>	
                         </div>
                     </div>
 
@@ -784,7 +780,7 @@
                                 <li>
                                     <label class="gfield_label">How many colors will be on the 1st printing location?*</label>
                                     <div class="ginput_container">
-                                        <select name="howManyColorsOne" class="large gfield_select">
+                                        <select name="howManyColorsOne" class="large gfield_select" required>
                                             <option value="1 color">1 color</option>
                                             <option value="2 colors">2 colors</option>
                                             <option value="3 colors">3 colors</option>
@@ -802,7 +798,7 @@
                                 <li>
                                     <label class="gfield_label">How many colors will be on the 2nd printing location?*</label>
                                     <div class="ginput_container">
-                                        <select name="howManyColorsSecond" class="large gfield_select">
+                                        <select name="howManyColorsSecond" class="large gfield_select" required>
                                             <option value="1 color">1 color</option>
                                             <option value="2 colors">2 colors</option>
                                             <option value="3 colors">3 colors</option>
@@ -821,7 +817,7 @@
                                 <li>
                                     <label class="gfield_label">When would you like to have your project completed?*</label>
                                     <div class="ginput_container">
-                                        <input type="date" name="calendar" required>
+                                        <input type="date" name="calendar">
                                     </div>
                                     <div class="gfield_description">Let us know what day you expect your order by. Rush orders are welcome!</div>
                                 </li>
@@ -835,22 +831,22 @@
                                 <li class="gfield custom_label gfield_no_follows_desc">Contact Information</li>
                                 <li class="name_fld">
                                     <div class="ginput_container">
-                                        <input name="firstName" type="text" class="large" placeholder="First Name*" required>
+                                        <input name="firstName" type="text" class="large" placeholder="First Name*">
                                     </div>
                                 </li>
                                 <li class="last_name_fld">
                                     <div class="ginput_container">
-                                        <input name="lastName" type="text" class="large" placeholder="Last Name*" required>
+                                        <input name="lastName" type="text" class="large" placeholder="Last Name*">
                                     </div>
                                 </li>
                                 <li class="quote_mail">
                                     <div class="ginput_container">
-                                        <input name="email" type="text" class="large" placeholder="Email*" required>
+                                        <input name="email" type="text" class="large" placeholder="Email">
                                     </div>
                                 </li>
                                 <li class="phone_fld">
                                     <div class="ginput_container">
-                                        <input name="phone" type="text" class="large" placeholder="Phone*" required>
+                                        <input name="phone" type="text" class="large" placeholder="Phone*">
                                     </div>
                                 </li>
                             </ul>
