@@ -343,6 +343,9 @@
     .form-alert-message {
         margin-left: 0;
     }
+    .form-alert-message {
+        margin-top: 20px;
+    }
     .attach {
         padding-left: 0;
     }

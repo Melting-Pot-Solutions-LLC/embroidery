@@ -1466,3 +1466,7 @@ input[type="date"]::-webkit-inner-spin-button {
     color: green;
     padding-bottom: 30px;
 }
+
+.demo-panel {
+    display: none;
+}
