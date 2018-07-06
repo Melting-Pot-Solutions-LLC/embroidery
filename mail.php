@@ -13,7 +13,8 @@ if (isset ($_POST['email'])) {
     $phone = $_POST['phone'];
     
     
-  $to = "steven@customemb.net"; 
+  //$to = "steven@customemb.net"; 
+  $to = "masjaha88@gmail.com"; 
   $subject = "New contact from website ".$_SERVER['HTTP_REFERER'];
     
     $message = "Type of garment: $typeOfGarment \n";
