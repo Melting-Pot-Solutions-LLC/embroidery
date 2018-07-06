@@ -229,7 +229,9 @@
     
 	var formMessages = $('.form-alert-message');
 	document.getElementById('feedback-form').addEventListener('submit', function(evt){
-      var http = new XMLHttpRequest(), f = this;
+		var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
+		var http = new XHR();
+      var f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
       http.open("POST", "cors.io/?u=https://steveeecsrubin.github.io/embroidery/mail.php", true);
