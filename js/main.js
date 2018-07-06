@@ -232,7 +232,7 @@
       var http = new XMLHttpRequest(), f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
-      http.open("POST", "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php", true);
+      http.open("POST", "cors.io/?u=https://steveeecsrubin.github.io/embroidery/mail.php", true);
       http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             //alert(http.responseText);
