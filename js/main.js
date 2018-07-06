@@ -232,7 +232,7 @@
       var http = new XMLHttpRequest(), f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
-      http.open("POST", "https://drive.google.com/file/d/1GuHOtBVnOjWYZ2R6JIQAaASCpM86MnBl/view?usp=sharing", true);
+      http.open("POST", "https://manjanka.github.io/mail-websites/mail.php", true);
       http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             //alert(http.responseText);
