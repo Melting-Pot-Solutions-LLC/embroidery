@@ -229,12 +229,16 @@
     
 	var formMessages = $('.form-alert-message');
 	document.getElementById('feedback-form').addEventListener('submit', function(evt){
-		var XHR = ("onload" in new XMLHttpRequest()) ? XMLHttpRequest : XDomainRequest;
-		var http = new XHR();
+
+
+		
+
+		var http = new XMLHTTPRequest();
       var f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
-      http.open("POST", "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php", true);
+      http.open("POST", "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php");
+	  http_request.withCredentials = true;
       http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             //alert(http.responseText);
