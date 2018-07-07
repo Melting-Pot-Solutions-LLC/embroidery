@@ -229,14 +229,10 @@
     
 	var formMessages = $('.form-alert-message');
 	document.getElementById('feedback-form').addEventListener('submit', function(evt){
-
-
-		
-
-		var http = new XMLHttpRequest();
+	  /*var http = new XMLHttpRequest();
       var f = this;
       evt.preventDefault();
-      //http.open("POST", "./mail.php", true);
+      http.open("POST", "./mail.php", true);
       http.open("POST", "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php");
 	  http.withCredentials = true;
       http.onreadystatechange = function() {
@@ -251,12 +247,29 @@
         }
       }
       http.onerror = function() {
-        //alert('Oops! An error occured and your message could not be sent.');
           $(formMessages).removeClass('hidden');
           $(formMessages).addClass('alert-danger');
           $(formMessages).text('Oops! An error occured and your message could not be sent.');
       }
-      http.send(new FormData(f));
+      http.send(new FormData(f));*/
+		  $.ajax({
+			  url: "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php",
+			  type: "POST",
+			  dataType: 'jsonp',
+			  success: function(response) {
+				$(formMessages).removeClass('hidden');
+				$(formMessages).removeClass('alert-danger');
+				$(formMessages).addClass('alert-success');
+				$(formMessages).text(http.responseText);
+				$(".contact-form input").val("");
+				$(".contact-form input.submit-btn").val("Submit");
+			  },
+			  error: function(response) {
+				  $(formMessages).removeClass('hidden');
+				  $(formMessages).addClass('alert-danger');
+				  $(formMessages).text('Oops! An error occured and your message could not be sent.');
+			  }
+			});
     }, false);
     
 }(jQuery));	

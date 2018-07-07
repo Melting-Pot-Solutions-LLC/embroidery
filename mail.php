@@ -1,19 +1,4 @@
 <?php
-if (isset($_SERVER["HTTP_ORIGIN"]) === true) {
-	$origin = $_SERVER["HTTP_ORIGIN"];
-	$allowed_origins = array(
-		"https://steveeecsrubin.github.io"
-	);
-	if (in_array($origin, $allowed_origins, true) === true) {
-		header('Access-Control-Allow-Origin: ' . $origin);
-		header('Access-Control-Allow-Credentials: true');
-		header('Access-Control-Allow-Methods: POST');
-		header('Access-Control-Allow-Headers: Content-Type');
-	}
-	if ($_SERVER["REQUEST_METHOD"] === "OPTIONS") {
-		exit; // OPTIONS request wants only the policy, we can stop here
-	}
-}
 
 if (isset ($_POST['email'])) {
     
