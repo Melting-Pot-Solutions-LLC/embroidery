@@ -273,7 +273,7 @@
 			
 			var xhr = new XMLHttpRequest();
 
-			xhr.open('GET', 'https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php', false);
+			xhr.open('POST', 'https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php', false);
 			xhr.send();
 
 			if (xhr.status != 200) {
