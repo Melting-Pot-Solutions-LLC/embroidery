@@ -233,12 +233,12 @@
 
 		
 
-		var http = new XMLHTTPRequest();
+		var http = new XMLHttpRequest();
       var f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
       http.open("POST", "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php");
-	  http_request.withCredentials = true;
+	  http.withCredentials = true;
       http.onreadystatechange = function() {
         if (http.readyState == 4 && http.status == 200) {
             //alert(http.responseText);
