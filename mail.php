@@ -1,6 +1,8 @@
 <?php
-header('Content-type: text/html');
-header('Access-Control-Allow-Origin: *');
+
+header('Access-Control-Allow-Origin: http://customemb.net');
+header('Access-Control-Allow-Credentials: true');
+header('Content-type: application/xml');
 
 if (isset ($_POST['email'])) {
     

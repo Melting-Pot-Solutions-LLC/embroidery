@@ -234,9 +234,8 @@
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
       http.open("POST", "https://customemb.000webhostapp.com/mail.php", true);
-	  http.withCredentials = true;
       http.onreadystatechange = function() {
-        if (http.readyState == 4 && http.status == 200 && http.status == 405) {
+        if (http.readyState == 4 && http.status == 200) {
             //alert(http.responseText);
             $(formMessages).removeClass('hidden');
             $(formMessages).removeClass('alert-danger');
