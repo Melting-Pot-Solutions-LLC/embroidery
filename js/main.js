@@ -240,7 +240,7 @@
             $(formMessages).removeClass('hidden');
             $(formMessages).removeClass('alert-danger');
             $(formMessages).addClass('alert-success');
-            $(formMessages).text(http.responseText);
+            $(formMessages).text('Thank You! Your message has been sent.');
             $(".contact-form input").val("");
             $(".contact-form input.submit-btn").val("Submit");
         }
