@@ -229,7 +229,7 @@
     
 	var formMessages = $('.form-alert-message');
 	document.getElementById('feedback-form').addEventListener('submit', function(evt){
-	  /*var http = new XMLHttpRequest();
+	  var http = new XMLHttpRequest();
       var f = this;
       evt.preventDefault();
       //http.open("POST", "./mail.php", true);
@@ -250,10 +250,9 @@
           $(formMessages).addClass('alert-danger');
           $(formMessages).text('Oops! An error occured and your message could not be sent.');
       }
-      http.send(new FormData(f));*/
-		  $.ajax({
-			  //url: "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php",
-			  url: "https://customemb.000webhostapp.com/mail.php",
+      http.send(new FormData(f));
+		 /* $.ajax({
+			  url: "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php",
 			  type: "POST",
      	    contentType: "application/x-www-form-urlencoded; charset=utf-8", 
 			  success: function(response) {
@@ -269,7 +268,7 @@
 				  $(formMessages).addClass('alert-danger');
 				  $(formMessages).text('Oops! An error occured and your message could not be sent.');
 			  }
-			});
+			});*/
 			
     }, false);
     
