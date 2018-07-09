@@ -252,8 +252,8 @@
       }
       http.send(new FormData(f));*/
 		  $.ajax({
-			  url: "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php",
-			  //url: "https://customemb.000webhostapp.com/mail.php",
+			  //url: "https://cors.io/?https://steveeecsrubin.github.io/embroidery/mail.php",
+			  url: "https://customemb.000webhostapp.com/mail.php",
 			  type: "POST",
      	    contentType: "application/x-www-form-urlencoded; charset=utf-8", 
 			  success: function(response) {
