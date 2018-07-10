@@ -184,22 +184,30 @@
     }
     .nav.navbar-nav.navbar-right {
         margin-top: 0;
+        padding: 10px 0;
+        background: #f2f2f2;
     }
     .header_bottom .navbar-toggle .icon-bar {
         background-color: #000;
     }
     .mainmenu ul.nav.navbar-nav li ul {
-        display: block;
+        display: none;
         position: initial;
         opacity: 1;
         visibility: visible;
-        padding: 0 15px 18px;
+        padding: 0 15px 0;
     }
     .mainmenu ul.nav.navbar-nav li ul li {
         border: none;
     }
+    .mainmenu ul.nav.navbar-nav li ul a {
+        padding: 0;
+    }
+    .mainmenu ul.nav.navbar-nav li ul {
+        width: auto;
+    }
     .mainmenu ul li a i {
-        padding-top: 18px;
+        padding-top: 0;
     }
     .banner_text {
         margin-top: -90px;

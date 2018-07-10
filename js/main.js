@@ -226,6 +226,13 @@
           }
     });
     
+    $(".product-catalogs-i").on("click", ()=>{
+        $(".product-catalogs-ul").toggle("slow");
+    });
+    $(".services-i").on("click", ()=>{
+        $(".services-ul").toggle("slow");
+    });
+    
     
 	var formMessages = $('.form-alert-message');
 	document.getElementById('feedback-form').addEventListener('submit', function(evt){
