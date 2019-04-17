@@ -1470,3 +1470,6 @@ input[type="date"]::-webkit-inner-spin-button {
 .demo-panel {
     display: none;
 }
+.reward {
+	height: 65px;
+}
