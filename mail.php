@@ -1,6 +1,6 @@
 <?php
 
-header('Access-Control-Allow-Origin: http://customemb.net');
+header('Access-Control-Allow-Origin: https://customemb.net');
 header('Access-Control-Allow-Credentials: true');
 header('Content-type: application/xml');
 
